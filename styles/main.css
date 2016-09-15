@@ -1,13 +1,47 @@
 body
 {
     background-color: #f5f5f8;
-
 }
 
-ul {
+.navigationul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color:forestgreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+.navigation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition: 1s transform 5ms;
+}
 
 }
+
+.floating-clear {
+    clear: both;
+}
+
+
+
+li a:hover {  transform: scale(1.5);  }
+
+
+
 /*PATRYK*/
 
 #intro
