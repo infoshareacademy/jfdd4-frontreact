@@ -27,6 +27,7 @@ li {
     padding-left: 10px;
     padding-bottom: 10px;
     text-decoration: none;
+    transition: 1s transform 5ms;
 }
 
 }
@@ -37,7 +38,9 @@ li {
 
 
 
-li a:hover { opacity: 0.5;}
+li a:hover {  transform: scale(1.5);  }
+
+
 
 #be
 {
