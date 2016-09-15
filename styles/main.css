@@ -2,3 +2,64 @@ body
 {
     background-color: #f5f5f8;
 }
+
+#features {
+    display: block;
+    background-color: #f6f6f9;
+    margin-top: 50px; /*margin - pasek nawigacji od Piotra*/
+}
+
+.features-feature{
+    margin: 30px 30px 30px;
+    padding: 15px;
+    width: 40vw;
+}
+
+#features-suggestion {
+    background-image: url(../images/features-suggestion.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+#features-compare {
+    background-image: url(../images/features-compare.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+#features-nav {
+    background-image: url(../images/features-nav.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+#features-list {
+    background-image: url(../images/features-list.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+.features-title {
+    font-size: 20px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.features-description{
+    text-align: justify;
+    padding: 30px;
+}
+
+.features-float-right {
+    float: right;
+}
+.features-float-left {
+    float: left;
+}
+.features-float-clear {
+    clear: both;
+}
