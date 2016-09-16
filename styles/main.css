@@ -69,6 +69,7 @@ body
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .navigationul {
@@ -105,8 +106,9 @@ li {
 li a:hover {  transform: scale(1.5);  }
 
 .inputemail {
-    width: 200px;
-    height: 20px;
+    width: 400px;
+    height: 40px;
+
 }
 
 .myButton {
