@@ -139,11 +139,11 @@ li a:hover {  transform: scale(1.5);  }
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
     font-size:17px;
     padding:13px 21px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
+    text-shadow:0 1px 0 #2f6627;
 }
 .myButton:hover {
     background-color:#5cbf2a;
@@ -155,36 +155,47 @@ li a:hover {  transform: scale(1.5);  }
 
 
 /*PATRYK*/
-
+/*INTRO CZYLI TLO, OBRAZEK, ZALOZENIE - PRZYCIEMNIANY I ROZJASNIANY*/
 #intro
 {
-    background-image: url(../images/header-background.jpg);
-    background-size: 100%;
-    min-height: 400px;
-    max-height: 500px;
+    background-image: url(../images/background/1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
+
+/*MALY LOGOTYP SERWISU*/
 
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     zoom: 300%;
-    transform: rotate(-8deg);
+    transform: rotate(-2deg);
 
 }
+/*NAPIS PROMUJACY*/
 
 .slogan {
-    display: block;
-    width: 60%;
-    margin: 10px auto auto;
-    line-height: 33px;
-    font-weight: 400;
+    padding: 15% 10px 5%;
     text-align: center;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.48);
-    font-family: Lato, sans-serif ;
-    color: #fff;
-    font-size: 30px;
+    position: relative;
+}
 
+.slogan h1 {
+    color: red;
+    font-size: 48px;
+}
+
+.slogan p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+    font-weight: 300;
+    line-height: 28px;
 }
 /*PATRYK*/
 
