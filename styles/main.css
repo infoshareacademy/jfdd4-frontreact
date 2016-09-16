@@ -308,7 +308,7 @@ a.linksocial
 }
 #gmail:hover
 {
-    background-color: #CC181E;
+    background-color: red;
     color: white;
     transform: rotate(360deg);
 }
