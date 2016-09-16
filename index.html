@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <title>Sugero.pl</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/fontello.css">
 </head>
 <body>
 <div id="navigation">
+    <ul class="navigationul">
+        <li class="navigation">
+            <a class="navigation" href="#intro">Intro</a> </li>
+        <li class="navigation">
+            <a class="navigation" href="#features">Features</a></li>
+        <li class="navigation">
+            <a class="navigation" href="#singup" >Sign up!</a></li>
+        <li class="navigation">
+            <a class="navigation" href="#team" >Team</a></li>
+        <li class="floating-clear"></li>
+
+
+    </ul>
 <!--Piotr--
 <!-- Odsyłacze do poszczególnych ID-->
 </div>
-<div id="intro">
 <!--Patryk-->
-    <!--Hasło - Zdrowie Twoje i Twoich Bliskich jest dla nas Najważniejsze-->
-    <!--Comment - Wybierzemy dla Ciebie najlepsze produkty-->
-</div>
+<div id="intro">
+    <div class="logo">
+        <p></p><img class="logo" src="images/cos.svg" alt="Obrazek">
+    </div>
+    <div class="slogan">Zdrowie Twoje i Twoich bliskich
+        <br>
+        jest dla nas najważniejsze.</div>
 
+<!--Patryk-->
+
+</div>
+<!--Patryk-->
 <div id="features">
 <!--Beata-->
 
@@ -48,13 +69,58 @@
     <div class="features-float-clear"></div>
 </div>
 <div id="singup">
+    <form action="action_signu.php">
+        Wpisz tu swojego emaila:<br>
+        <input class="inputemail" type="email" placeholder="Your email...." name="email"  autofocus>
+        <input class="myButton" type="submit">
+    </form>
 <!--buttton tutaj-->
 </div>
 <div id="team">
 
 </div>
 <div id="footer">
-<!--Karol-->
+    <div id="be">
+        <h1>Follow us</h1>
+    </div>
+    <div id="contact">
+        <h1>Contact us</h1>
+    </div>
+    <div style="clear: both"></div>
+    <div id="socials">
+        <a href="https://facebook.com" class="linksocial" target="_blank">
+            <div id="fc">
+                <i class="icon-facebook"></i>
+            </div>
+        </a>
+        <a href="htps://googleplus.com" class="linksocial" target="_blank">
+            <div id="gplus">
+                <i class="icon-googleplus"></i>
+            </div>
+        </a>
+        <a href="https://www.instagram.com" class="linksocial" target="_blank">
+            <div id="ins">
+                <i class="icon-instagram"></i>
+            </div>
+        </a>
+        <a href="https://youtube.pl" class="linksocial" target="_blank">
+            <div id="yt">
+                <i class="icon-youtube"></i>
+            </div>
+        </a>
+        <div style="clear: both"></div>
+    </div>
+    <div id="mail">
+        <a href="mailto:frontreact@infoshareacadey.pl?Subject=Hello%20again" class="linksocial" target="_blank">
+            <div id="gmail">
+                <i class="icon-gmail"></i>
+            </div>
+        </a>
+    </div>
+    <div id="credits">
+        <p>© Copyright 2016</p>
+        <p>Wszystkie prawa zastrzeżone. Wszystkie teksty, zdjęcia, grafika, ścieżki dźwiękowe, wideo i animacji danych jak również ich skład lub układ są chronione prawami autorskimi i innymi prawami ochronnymi. Ich zawartość nie mogą być kopiowane do celów komercyjnych lub innych, ani nie może on być wyświetlany, nawet w zmodyfikowanej wersji na innych stronach internetowych.</p>
+    </div>
 </div>
 </body>
 </html>

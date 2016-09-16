@@ -3,6 +3,7 @@ body
     background-color: #f5f5f8;
 }
 
+<<<<<<< HEAD
 #features {
     display: block;
     background-color: #f6f6f9;
@@ -62,4 +63,260 @@ body
 }
 .features-float-clear {
     clear: both;
+=======
+.navigationul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:forestgreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+.navigation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition: 1s transform 5ms;
+}
+
+
+.floating-clear {
+    clear: both;
+}
+
+
+
+li a:hover {  transform: scale(1.5);  }
+
+.inputemail {
+    width: 200px;
+    height: 20px;
+}
+
+.myButton {
+    background-color:#44c767;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:13px 21px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    background-color:#5cbf2a;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+/*PATRYK*/
+
+#intro
+{
+    background-image: url(../images/header-background.jpg);
+    background-size: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 300%;
+    transform: rotate(-8deg);
+
+}
+
+.slogan {
+    display: block;
+    width: 60%;
+    margin: 10px auto auto;
+    line-height: 33px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.48);
+    font-family: Lato, sans-serif ;
+    color: #fff;
+    font-size: 30px;
+
+}
+/*PATRYK*/
+
+#be
+{
+    float: left;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#contact
+{
+    float: right;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin-right: 10px;
+}
+#footer
+{
+    width:99%;
+    background-color: rgba(246, 246, 249, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+}
+#socials
+{
+    float: left;
+    width: 485px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    height: 125px;
+    padding: 10px;
+    /*border: solid 1px;*/
+    /*text-align: center;*/
+    position: static;
+
+}
+#yt
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*border: solid 1px black;*/
+    margin-right: auto;margin-left: 20px;
+    transition:background-color 3s,  color 3s, transform 3s;
+
+}
+#yt:hover
+{
+    background-color: #CC181E;
+    color: white;
+    transform: rotate(360deg);
+}
+a.linksocial
+{
+    color: black;
+    text-decoration: none;
+}
+#fc
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*border: solid 1px black;*/
+    margin-right: auto;margin-left: 20px;
+    transition:background-color 3s,  color 3s, transform 3s;}
+#fc:hover
+{
+    background-color: #3B5998;
+    color: white;
+    transform: rotate(360deg);
+}
+
+#gplus
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*border: solid 1px black;*/
+    margin-right: auto;margin-left: 20px;
+    transition:background-color 3s,  color 3s, transform 3s;
+}
+#gplus:hover
+{
+    background-color: #dd4b39;
+    color: white;
+    transform: rotate(360deg);
+}
+#ins
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*border: solid 1px black;*/
+    margin-right: auto;margin-left: 20px;
+    transition:background-color 3s,  color 3s, transform 3s;
+
+}
+#ins:hover
+{
+    background-color: #405de6;
+    color: white;
+    transform: rotate(360deg);}
+
+#mail
+{
+    float: right;
+    width: 145px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    height: 125px;
+    padding: 10px;
+    /*border: solid 1px;*/
+    /*text-align: center;*/
+    position: static;
+}
+#gmail
+{
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*border: solid 1px black;*/
+    margin-right: 20px;margin-left: auto;
+    transition:background-color 3s,  color 3s, transform 3s;
+}
+#gmail:hover
+{
+    background-color: #CC181E;
+    color: white;
+    transform: rotate(360deg);
+}
+
+#credits {
+    height: 100px;
+    display: inline;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+>>>>>>> origin/master
 }
