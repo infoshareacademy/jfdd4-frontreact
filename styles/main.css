@@ -6,7 +6,9 @@ body
 #features {
     display: block;
     background-color: #f6f6f9;
-    margin-top: 50px; /*margin - pasek nawigacji od Piotra*/
+    margin-top: 150px;
+    /*margin - pasek nawigacji od Piotra*/
+    padding: 50px;
 }
 
 .features-feature{
@@ -63,6 +65,21 @@ body
 .features-float-clear {
     clear: both;
 }
+
+/*.team-members {*/
+    /*width: 300px;*/
+    /*background-color: #3B5998;*/
+/*}*/
+
+
+/*.team-float-left {*/
+    /*float: left;*/
+/*}*/
+
+/*.team-float-clear {*/
+    /*clear: both;*/
+/*}*/
+
 
 .navigationul {
     list-style-type: none;
