@@ -189,29 +189,30 @@ li a:hover {  transform: scale(1.5);  }
 #footer
 {
     width:99%;
-    background-color: rgba(246, 246, 249, 0.4);
+    background-color: rgba(230, 230, 230, 0.4);
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
+    /*height: 300px;*/
     text-align: center;
     padding: 20px;
-    position: relative;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    /*position: relative;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
 
 }
 #socials
 {
     float: left;
-    width: 485px;
+    width: 100%;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
-    height: 125px;
+    /*height: 125px;*/
     padding: 10px;
     /*border: solid 1px;*/
     /*text-align: center;*/
-    position: static;
+    /*position: static;*/
+
 
 }
 #yt
@@ -295,7 +296,7 @@ a.linksocial
     padding: 10px;
     /*border: solid 1px;*/
     /*text-align: center;*/
-    position: static;
+    /*position: static;*/
 }
 #gmail
 {
@@ -309,20 +310,19 @@ a.linksocial
 }
 #gmail:hover
 {
-    background-color: #CC181E;
+    background-color: red;
     color: white;
     transform: rotate(360deg);
 }
 
 #credits {
-    height: 100px;
-    display: inline;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    min-height: 100px;
+    /*display: inline;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
     text-align: center;
     background-color: rgba(0, 0, 0, 0.55);
     color: #fff;
->>>>>>> origin/master
 }
