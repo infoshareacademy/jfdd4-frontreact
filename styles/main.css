@@ -163,7 +163,7 @@ li a:hover {  transform: scale(1.5);  }
     transition: 2s ease;
     position: relative;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 800px;
 }
 
 /*MALY LOGOTYP SERWISU*/
@@ -364,11 +364,21 @@ a.linksocial
     text-align: center;
     width: 300px;
     height: 60px;
-    border-radius: 30%;
-    opacity: 0.7;
-    background: linear-gradient(chocolate, lightsalmon);
+    border-radius: 40%;
+    opacity: 0.3;
+    background: radial-gradient(darkgrey, #e3580d);
     font-size: 40px;
-    /*box-shadow: 50px 50px 5px grey;*/
+    box-shadow: 0px 0px 222px white;
+    color: white;
+    font-family: 'Courgette', cursive;
 
+}
 
+{
+
+}
+#subscribe:hover
+{
+    opacity: 0.7;
+    text-decoration: none;
 }
