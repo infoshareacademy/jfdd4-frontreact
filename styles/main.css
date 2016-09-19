@@ -96,7 +96,7 @@ body
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:forestgreen;
+    background-color: rgba(139,133,135,0.5);
 }
 
 li {
@@ -123,6 +123,8 @@ li {
 
 
 li a:hover {  transform: scale(1.5);  }
+
+.signup {text-align: center}
 
 .inputemail {
     width: 400px;
