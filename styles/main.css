@@ -157,13 +157,13 @@ li a:hover {  transform: scale(1.5);  }
 #intro
 {
 
-    background-image: linear-gradient(to top,rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url(../images/background/4.jpg);
+    background-image: linear-gradient(to top,rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url(../images/background/8.jpg);
     background-size: cover;
     background-position: center;
     transition: 2s ease;
     position: relative;
     background-repeat: no-repeat;
-    height: auto;
+    height: 600px;
 }
 
 /*MALY LOGOTYP SERWISU*/
@@ -173,12 +173,12 @@ li a:hover {  transform: scale(1.5);  }
     position: inherit;
     zoom: 70%;
     float: left;
-
+    padding-top: 50px;
 }
 /*NAPIS PROMUJACY*/
 
 .slogan {
-    padding: 15% 10px 5%;
+    padding: 20% 10px 5%;
     text-align: center;
     position: relative;
 }
@@ -186,6 +186,7 @@ li a:hover {  transform: scale(1.5);  }
 .slogan h1 {
     color: antiquewhite;
     font-size: 48px;
+
 }
 
 .slogan p {
