@@ -1,6 +1,7 @@
 body
 {
     background-color: #f5f5f8;
+    margin: 0px;
 }
 
 #features {
@@ -163,7 +164,7 @@ li a:hover {  transform: scale(1.5);  }
     transition: 2s ease;
     position: relative;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100%;
 }
 
 /*MALY LOGOTYP SERWISU*/
@@ -178,14 +179,16 @@ li a:hover {  transform: scale(1.5);  }
 /*NAPIS PROMUJACY*/
 
 .slogan {
-    padding: 20% 10px 5%;
+    padding: 25% 10px 5%;
     text-align: center;
     position: relative;
 }
 
 .slogan h1 {
     color: antiquewhite;
-    font-size: 48px;
+    font-weight:bold;
+    font-size: 58px;
+    /*font-family: "Courier 10 Pitch";*/
 
 }
 
@@ -193,8 +196,10 @@ li a:hover {  transform: scale(1.5);  }
     margin-top: 20px;
     font-size: 20px;
     color: antiquewhite;
-    font-weight: 300;
-    line-height: 28px;
+    /*font-family: "Droid Arabic Naskh";*/
+    font-weight: lighter;
+    line-height: 31px;
+
 }
 /*PATRYK*/
 
@@ -218,7 +223,7 @@ li a:hover {  transform: scale(1.5);  }
 }
 #footer
 {
-    width:99%;
+    width:auto;
     background-color: rgba(230, 230, 230, 0.4);
     margin-left: auto;
     margin-right: auto;
