@@ -67,20 +67,52 @@ body
     clear: both;
 }
 
-/*.team-members {*/
-    /*width: 300px;*/
-    /*background-color: #3B5998;*/
-/*}*/
-
-
-/*.team-float-left {*/
-    /*float: left;*/
-/*}*/
-
-/*.team-float-clear {*/
-    /*clear: both;*/
-/*}*/
-
+#team {    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    padding-top: 40px;
+}#team-section {
+     display: flex;    flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-around;
+ }.team-members {
+      flex: 1;
+      padding: 20px;
+      padding-top: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      min-width: 250px;
+      max-width: 300px;
+      text-align: justify;
+  }.team-header {
+       text-align: center;
+       margin: 20px 0 20px;}
+.team-title {
+    text-align: center;
+    padding: 0 50px 20px;
+}.team-name {
+     display: inline;
+     /*top: 250px;*/
+     z-index: 2;
+     margin: auto;
+     text-align: center;
+ }
+.team-foto {
+    display: block;
+    margin: auto;
+    width: 100%;
+    opacity: 0.1;
+    z-index: 1;
+    filter: grayscale(90%);
+    margin-bottom: 10px;
+}.team-foto:before {
+     /*opacity: 0.5;*/
+     /*background-color: #fff;*/
+ }.team-foto:hover{
+      opacity: 0.5;
+      transition: opacity 2.9s;
+  }
+.team-foto:after{    transition: opacity 3.9s ;
 
 .navigation-nav {
     position: fixed;
@@ -98,6 +130,7 @@ body
     overflow: hidden;
     background-color: rgba(139,133,135,0.5);
 }
+
 
 li {
     float: left;
