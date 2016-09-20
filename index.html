@@ -5,6 +5,7 @@
     <title>Sugero.pl</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 </head>
 <body>
 <nav class="navigation-nav" id="navigation">
@@ -29,11 +30,15 @@
     <div class="logo">
         <p></p><img class="logo" src="images/background/logo31.png" alt="logo">
     </div>
-    <div class="slogan" style="">
+    <div class="slogan">
         <h1>Wybierzesz najlepsze produkty</h1>
         <p>Nie ruszając się z domu. Nigdy nie było to takie proste!</p>
         <!--TUTAJ WSTAWIMY BUTTONA-->
-        </div>
+        <!--Karol-button-->
+        <a href="#singup" style="text-decoration: none;">
+            <div id="subscribe">Subskrybuj</div>
+        </a>
+    </div>
 
 <!--Patryk-->
 </div>
@@ -68,54 +73,43 @@
     </div>
     <div class="features-float-clear"></div>
 </div>
-<section>
-<div class="signup" id="singup">
-    <form action="http://tools.is-academy.pl/mailer.php" method="post">
-        <div class="signup">Obiecujemy zkontaktować się z tobą tylko RAZ!:</div><br>
+<div id="singup">
+    <form action="action_signu.php">
+        Wpisz tu swojego emaila:<br>
         <input class="inputemail" type="email" placeholder="Your email...." name="email"  autofocus>
-        <input type="hidden" name="receiver" value="wildmanblues@op.pl">
         <input class="myButton" type="submit">
     </form>
 
 </div>
-
-</section>
 <div id="team">
+    <!--<div id="team-piotr" class="team-float-left team-members">-->
+        <!--<img src="" alt="zdjecie-piotr">-->
+        <!--<p>Piotr</p>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+            <!--Sed maximus lorem ut massa pharetra ornare. Nullam in quam-->
+            <!--nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.</p>-->
+    <!--</div>-->
+    <!--<div id="team-patryk" class="team-float-left team-members">-->
+        <!--<img src="" alt="zdjecie-patryk">-->
+        <!--<p>Patryk</p>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+            <!--Sed maximus lorem ut massa pharetra ornare. Nullam in quam-->
+    <!--</div>-->
+    <!--<div id="team-karol" class="team-float-left team-members">-->
+        <!--<img src="" alt="zdjecie-karol">-->
+        <!--<p>Karol</p>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+            <!--Sed maximus lorem ut massa pharetra ornare. Nullam in quam-->
+    <!--</div>-->
+    <!--<div id="team-beata" class="team-float-left team-members">-->
+        <!--<img src="" alt="zdjecie-beata">-->
+        <!--<p>Beata</p>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+            <!--Sed maximus lorem ut massa pharetra ornare. Nullam in quam-->
+    <!--</div>-->
 
-
-<section id="team">
-    <header class="team-header">Zespół</header>
-    <!--klasa dla opisu-->
-    <p class="team-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Inventore maxime corporis similique, tempore tenetur ipsum
-        eligendi animi illo deleniti voluptatum.</p>
-    <div id="team-section">
-        <div class="team-members team-foto-Patryk">
-            <img class="team-foto " src="images/face.jpeg" alt="zdjecie-piotr">
-            <h2 class="team-name">Piotr</h2>
-            <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-                nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.</p>
-        </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-patryk">
-            <h2 class="team-name">Patryk</h2>
-            <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-        </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-karol">
-            <h2 class="team-name">Karol</h2>
-            <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-        </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-beata">
-            <h2 class="team-name">Beata</h2>
-            <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-        </div>
-    </div></section>
+    <!--<div class="team-float-clear"></div>-->
+</div>
 <!--Karol-->
 
 <div id="footer">
