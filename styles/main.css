@@ -124,13 +124,13 @@ li a:hover {  transform: scale(1.5);  }
     margin-left: -180px;
 }
 
-.inputemail {
+.input-email {
     width: 400px;
     height: 40px;
 
 }
 
-.myButton {
+.my-button {
     background-color: #3e528b;
     -moz-border-radius:28px;
     -webkit-border-radius:28px;
@@ -145,7 +145,7 @@ li a:hover {  transform: scale(1.5);  }
     text-decoration:none;
     text-shadow:0 1px 0 #2f6627;
 }
-.myButton:hover {
+.my-button:hover {
     background-color: #a469bf;
 }
 .myButton:active {
