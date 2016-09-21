@@ -76,7 +76,7 @@ body
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(139,133,135,0.5);
 }
 
 
@@ -175,7 +175,7 @@ li a:hover {  transform: scale(1.5);  }
 .slogan {
     padding: 25% 10px 5%;
     text-align: center;
-    font-style: italic;
+    font-style: italic; /*czy jest ok?*/
     position: relative;
 }
 
