@@ -112,7 +112,17 @@ li {
 
 li a:hover {  transform: scale(1.5);  }
 
-.signup {text-align: center}
+.signup {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: auto;
+}
+
+
+.singup-title {
+    margin-left: -180px;
+}
 
 .inputemail {
     width: 400px;
@@ -121,11 +131,11 @@ li a:hover {  transform: scale(1.5);  }
 }
 
 .myButton {
-    background-color:#44c767;
+    background-color: #3e528b;
     -moz-border-radius:28px;
     -webkit-border-radius:28px;
     border-radius:28px;
-    border:1px solid #18ab29;
+    border:1px solid #61848b;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -136,7 +146,7 @@ li a:hover {  transform: scale(1.5);  }
     text-shadow:0 1px 0 #2f6627;
 }
 .myButton:hover {
-    background-color:#5cbf2a;
+    background-color: #a469bf;
 }
 .myButton:active {
     position:relative;
