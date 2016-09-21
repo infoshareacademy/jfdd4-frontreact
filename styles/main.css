@@ -83,7 +83,7 @@ body
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(139,133,135,0.5);
+    background-color: rgba(0, 0, 0, 0.61);
 }
 
 
@@ -148,7 +148,8 @@ li a:hover {  transform: scale(1.5);  }
 #intro
 {
 
-    background-image: linear-gradient(to top,rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url(../images/background/8.jpg);
+    background-image: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/background/8.jpg);
+    /*background-image: url(../images/background/10.jpg);*/
     background-size: cover;
     background-position: center;
     transition: 2s ease;
@@ -171,13 +172,14 @@ li a:hover {  transform: scale(1.5);  }
 .slogan {
     padding: 25% 10px 5%;
     text-align: center;
+    font-style: italic;
     position: relative;
 }
 
 .slogan h1 {
     color: antiquewhite;
     font-weight:bold;
-    font-size: 58px;
+    font-size: 48px;
     /*font-family: "Courier 10 Pitch";*/
 
 }
@@ -185,8 +187,7 @@ li a:hover {  transform: scale(1.5);  }
 .slogan p {
     margin-top: 20px;
     font-size: 20px;
-    color: antiquewhite;
-    /*font-family: "Droid Arabic Naskh";*/
+    color: ghostwhite;
     font-weight: lighter;
     line-height: 31px;
 
