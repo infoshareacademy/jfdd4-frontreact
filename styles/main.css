@@ -201,6 +201,7 @@ li a:hover {  transform: scale(1.5);  }
     font-style: italic;
     text-align: left;
     margin-left: 10px;
+    color: black;
 }
 
 #contact
@@ -210,6 +211,7 @@ li a:hover {  transform: scale(1.5);  }
     font-style: italic;
     text-align: left;
     margin-right: 10px;
+    color: black;
 }
 #footer
 {
@@ -248,7 +250,7 @@ li a:hover {  transform: scale(1.5);  }
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 
 }
 #yt:hover
@@ -270,7 +272,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;}
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;}
 #fc:hover
 {
     background-color: #3B5998;
@@ -286,7 +288,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 }
 #gplus:hover
 {
@@ -302,7 +304,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 
 }
 #ins:hover
@@ -331,7 +333,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: 20px;margin-left: auto;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 }
 #gmail:hover
 {
