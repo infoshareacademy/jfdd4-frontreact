@@ -105,20 +105,30 @@ li {
 
 li a:hover {  transform: scale(1.5);  }
 
-.signup {text-align: center}
+.signup {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: auto;
+}
 
-.inputemail {
+
+.singup-title {
+    margin-left: -180px;
+}
+
+.input-email {
     width: 400px;
     height: 40px;
 
 }
 
-.myButton {
-    background-color:#44c767;
+.my-button {
+    background-color: #3e528b;
     -moz-border-radius:28px;
     -webkit-border-radius:28px;
     border-radius:28px;
-    border:1px solid #18ab29;
+    border:1px solid #61848b;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -128,8 +138,8 @@ li a:hover {  transform: scale(1.5);  }
     text-decoration:none;
     text-shadow:0 1px 0 #2f6627;
 }
-.myButton:hover {
-    background-color:#5cbf2a;
+.my-button:hover {
+    background-color: #a469bf;
 }
 .myButton:active {
     position:relative;
@@ -195,6 +205,7 @@ li a:hover {  transform: scale(1.5);  }
     font-style: italic;
     text-align: left;
     margin-left: 10px;
+    color: black;
 }
 
 #contact
@@ -204,6 +215,7 @@ li a:hover {  transform: scale(1.5);  }
     font-style: italic;
     text-align: left;
     margin-right: 10px;
+    color: black;
 }
 #footer
 {
@@ -242,7 +254,7 @@ li a:hover {  transform: scale(1.5);  }
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 
 }
 #yt:hover
@@ -264,7 +276,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;}
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;}
 #fc:hover
 {
     background-color: #3B5998;
@@ -280,7 +292,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 }
 #gplus:hover
 {
@@ -296,7 +308,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: auto;margin-left: 20px;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 
 }
 #ins:hover
@@ -325,7 +337,7 @@ a.linksocial
     border-radius: 50px;
     /*border: solid 1px black;*/
     margin-right: 20px;margin-left: auto;
-    transition:background-color 3s,  color 3s, transform 3s;
+    transition:background-color 1500ms,  color 1500ms, transform 1500ms;
 }
 #gmail:hover
 {

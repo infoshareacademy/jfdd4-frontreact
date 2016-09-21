@@ -58,5 +58,5 @@
 .icon-facebook:before { content: '\e800'; font-size: 50px ; padding: 25px ; margin: auto } /* '' */
 .icon-googleplus:before { content: '\e801';font-size: 50px ; padding: 25px ; margin: auto } /* '' */
 .icon-youtube:before { content: '\e802';font-size: 50px ; padding: 25px ; margin: auto} /* '' */
-.icon-gmail:before { content: '\e803';font-size: 50px ; padding: 25px ; margin: auto } /* '' */
+.icon-gmail:before { content: '\e803';font-size: 50px ; padding: 25px ; margin-left: -3px } /* '' */
 .icon-instagram:before { content: '\f32d'; font-size: 50px ; padding: 25px ; margin: auto} /* '' */
