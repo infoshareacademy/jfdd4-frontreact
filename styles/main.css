@@ -428,12 +428,11 @@ a.linksocial
     text-align: center;
     width: 300px;
     height: 60px;
-    border-radius: 40%;
-    opacity: 0.3;
-    background: radial-gradient(darkgrey, #e3580d);
-    font-size: 40px;
+    opacity: 0.5;
+    background-color: #fff76c;
+    font-size: 28px;
     box-shadow: 0px 0px 222px white;
-    color: white;
+    color: black;
     font-family: 'Courgette', cursive;
 
 }
