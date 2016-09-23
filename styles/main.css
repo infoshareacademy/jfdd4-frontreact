@@ -359,37 +359,14 @@ a.linksocial
 }
 
 #team {
-    padding: 0;
     margin: 0;
-    color: rgba(255, 255, 255, 0.88);
     padding-top: 40px;
+    background-color: rgba(180, 180, 180, 0.25);
 }
-
-#team-section {
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     justify-content: space-around;
- }
-
-.team-members {
-    flex: 1;
-    padding: 20px;
-    padding-top: 40px;
-    background-color: rgba(0, 0, 0, 0.6);
-    min-width: 250px;
-    max-width: 300px;
-    text-align: justify;
-    color: #fff;
-  }
 
 .team-header {
     text-align: center;
     margin: 20px 0 20px;
-    color: rgba(0, 0, 0, 0.89);
-}
-
-.team-description {
     color: rgba(0, 0, 0, 0.89);
 }
 
@@ -398,40 +375,81 @@ a.linksocial
     padding: 0 50px 20px;
 }
 
-.team-name {
-    z-index: 2;
-    margin: auto;
+#team-section {
+    background-color: rgba(180, 180, 180, 0.25);
+}
+
+.team-members {
+    box-sizing: border-box;
+    float: left;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     text-align: center;
-    /*position:absolute;*/
-    top: 130px;
-    left: 0;
-    right:0;
-    opacity: 0.9;
-    padding-top: 10px;
- }
+    margin: 0 0 2% 0;
+}
+
+.team-members img {
+    max-width:300px;
+    width: 100%;
+}
 
 .team-foto {
-    display: block;
-    margin: auto;
-    width: 100%;
     opacity: 0.1;
-    z-index: 1;
     filter: grayscale(90%);
     margin-bottom: 10px;
 }
 
+.team-name {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-description {
+    color: rgba(0, 0, 0, 0.89);
+    max-width: 300px;
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+}
+
 .team-foto:before {
-     /*opacity: 0.5;*/
-     /*background-color: #fff;*/
- }
+    opacity: 0.5;
+    background-color: #fff;
+}
 
 .team-foto:hover{
-      opacity: 0.5;
-      transition: opacity 2.9s;
-  }
+    opacity: 0.5;
+    transition: opacity 2.9s;
+}
 
-.team-foto:after { transition: opacity 3.9s ;
+.team-foto:after {
+    transition: opacity 3.9s ;
+}
 
+@media screen and (min-width:800px) {
+    .team-members {
+        width: 23%;
+        margin: 0 1% 0 1%;
+    }
+
+    .team-members:nth-child(3n) {
+        margin-right: 0.5%;
+    }
+
+    .team-members:nth-child(4n) {
+        margin-right: 0.5%;
+    }
+
+    .team-members:nth-child(6n) {
+        margin-right: 0%;
+    }
+}
+
+.team-clear {
+    clear: both;
 }
 
 #subscribe {
@@ -447,12 +465,8 @@ a.linksocial
     box-shadow: 0px 0px 222px white;
     color: black;
     font-family: 'Courgette', cursive;
-
 }
 
-{
-
-}
 #subscribe:hover
 {
     opacity: 0.7;
