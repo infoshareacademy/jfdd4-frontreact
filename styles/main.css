@@ -1,7 +1,7 @@
 body
 {
     background-color: #f5f5f8;
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -396,7 +396,7 @@ a.linksocial
 }
 
 .team-foto {
-    opacity: 0.1;
+    opacity: 0.2;
     filter: grayscale(90%);
     margin-bottom: 10px;
 }
@@ -415,36 +415,15 @@ a.linksocial
     margin: auto;
 }
 
-.team-foto:before {
-    opacity: 0.5;
-    background-color: #fff;
-}
-
 .team-foto:hover{
     opacity: 0.5;
     transition: opacity 2.9s;
-}
-
-.team-foto:after {
-    transition: opacity 3.9s ;
 }
 
 @media screen and (min-width:800px) {
     .team-members {
         width: 23%;
         margin: 0 1% 0 1%;
-    }
-
-    .team-members:nth-child(3n) {
-        margin-right: 0.5%;
-    }
-
-    .team-members:nth-child(4n) {
-        margin-right: 0.5%;
-    }
-
-    .team-members:nth-child(6n) {
-        margin-right: 0%;
     }
 }
 
