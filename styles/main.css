@@ -2,6 +2,8 @@ body
 {
     background-color: #f5f5f8;
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    min-width: 370px;
 }
 
 
@@ -9,15 +11,20 @@ body
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: #f6f6f9;
+    background-color: #f6f6f6;
     margin-top: 150px;
     padding: 50px;
 }
 
 .features-feature {
     margin: 30px 30px 30px;
-    padding: 15px;
-    width: 40vw;
+    padding: 5px;
+    width: 40%;
+    border-bottom: inset;
+}
+
+.features-feature:hover {
+    background-color: #ebebeb;
 }
 
 .features-line-break {
@@ -29,6 +36,7 @@ body
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100px;
+    padding-top: 10px;
 }
 
 #features-compare {
@@ -53,14 +61,16 @@ body
 }
 
 .features-title {
-    font-size: 20px;
     margin-top: 150px;
     text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 .features-description{
-    text-align: justify;
-    padding: 30px;
+    text-align: center;
+    padding: 30px 10px 30px;
+    font-size: 1.5em;
 }
 
 .navigation-nav {
@@ -71,7 +81,7 @@ body
     z-index: 1;
 }
 
-.navigationul {
+.navigation-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -94,6 +104,7 @@ li {
     padding-bottom: 10px;
     text-decoration: none;
     transition: 1s transform 5ms;
+    font-size: 1.2em; /* dodalam*/
 }
 
 
@@ -110,11 +121,13 @@ li a:hover {  transform: scale(1.5);  }
     padding-top: 200px;
     padding-bottom: 200px;
     margin: auto;
+    background-color: #ffffff;
 }
 
 
 .singup-title {
-    margin-left: -180px;
+    /*margin-left: -180px;*/ /* dodalam*/
+    font-size: 2em;   /* dodalam*/
 }
 
 .input-email {
@@ -202,7 +215,7 @@ li a:hover {  transform: scale(1.5);  }
 {
     float: left;
     font-size: 20px;
-    font-style: italic;
+    /*font-style: italic;*/ /*dodalam*/
     text-align: left;
     margin-left: 10px;
     color: black;
@@ -212,7 +225,7 @@ li a:hover {  transform: scale(1.5);  }
 {
     float: right;
     font-size: 20px;
-    font-style: italic;
+    /*font-style: italic; !*dodalam*!*/
     text-align: left;
     margin-right: 10px;
     color: black;
@@ -230,7 +243,8 @@ li a:hover {  transform: scale(1.5);  }
     /*right: 0;*/
     /*left: 0;*/
     /*bottom: 0;*/
-
+    font-family: 'Lato', sans-serif; /*dodalam*/
+    font-style: normal; /*dodalam*/
 }
 #socials
 {
@@ -361,22 +375,26 @@ a.linksocial
 #team {
     margin: 0;
     padding-top: 40px;
-    background-color: rgba(180, 180, 180, 0.25);
+    /*background-color: rgba(180, 180, 180, 0.25);*/
+    background-color: #f6f6f6;
 }
 
 .team-header {
     text-align: center;
-    margin: 20px 0 20px;
+    margin: 30px 0 20px;
     color: rgba(0, 0, 0, 0.89);
+    font-size: 1.5em;
 }
 
 .team-title {
     text-align: center;
-    padding: 0 50px 20px;
+    padding: 0 20px 40px;
+    font-size: 1.1em;
 }
 
 #team-section {
-    background-color: rgba(180, 180, 180, 0.25);
+    /*background-color: rgba(180, 180, 180, 0.25);*/
+    background-color: #f6f6f6;
 }
 
 .team-members {
@@ -386,17 +404,24 @@ a.linksocial
     width: 100%;
     height: 100%;
     padding: 20px;
+    padding-top: 40px;
     text-align: center;
     margin: 0 0 2% 0;
+    border-top: 1px outset #dfdfe2;
+}
+
+div.team-members:first-child {
+    border-top: hidden;
 }
 
 .team-members img {
-    max-width:300px;
+    max-width: 200px;
     width: 100%;
+    border-radius: 50%;
 }
 
-.team-foto {
-    opacity: 0.2;
+.team-photo {
+    opacity: 0.8;
     filter: grayscale(90%);
     margin-bottom: 10px;
 }
@@ -413,22 +438,33 @@ a.linksocial
     width: 100%;
     text-align: justify;
     margin: auto;
+    font-size: 1em;
 }
 
-.team-foto:hover{
-    opacity: 0.5;
-    transition: opacity 2.9s;
+.team-photo:hover {
+    opacity: 1;
+    transition: opacity 0.9s;
+}
+
+.team-clear {
+    clear: both;
 }
 
 @media screen and (min-width:800px) {
     .team-members {
         width: 23%;
         margin: 0 1% 0 1%;
+        border-top: hidden;
+        border-left: 1px outset #dfdfe2;
     }
-}
 
-.team-clear {
-    clear: both;
+    .team-clear {
+        clear: both;
+    }
+
+    div.team-members:first-child {
+        border-left: hidden;
+    }
 }
 
 #subscribe {
@@ -443,7 +479,9 @@ a.linksocial
     font-size: 28px;
     box-shadow: 0px 0px 222px white;
     color: black;
-    font-family: 'Courgette', cursive;
+    /*font-family: 'Courgette', cursive;*/
+    font-family: 'Lato', sans-serif; /*dodalam*/
+    font-style: normal; /*dodalam*/
 }
 
 #subscribe:hover

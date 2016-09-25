@@ -1,9 +1,12 @@
 $font-size: 2em;
 $font-color: rgba(6, 6, 6, 0.92);
 $font-stack: Courier 10 Pitch, sans-serif;
-$feature-background-color: #f6f6f9;
-$team-background-color: rgba(176, 176, 176, 0.47);
+$feature-background-color: #f6f6f6;
+$team-background-color: #f6f6f6;
 
+body {
+    min-width: 370px;
+}
 #features {
     display: flex;
     flex-flow: row wrap;
@@ -11,20 +14,25 @@ $team-background-color: rgba(176, 176, 176, 0.47);
     background-color: $feature-background-color;
     margin-top: 150px;
     padding: 50px;
-    font-size: $font-size;
 }
 
 .features-feature {
     margin: 30px 30px 30px;
-    padding: 15px;
-    width: 40vw;
+    padding: 5px;
+    width: 40%;
+    border-bottom: inset;
+}
+
+/*podswietlanie feature*/
+.features-feature:hover {
+background-color: #ebebeb;
 }
 
 .features-line-break {
     width: 100%
 }
 
-@mixin feature-foto-settings {
+@mixin feature-photo-settings {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100px;
@@ -32,33 +40,35 @@ $team-background-color: rgba(176, 176, 176, 0.47);
 
 #features-suggestion {
     background-image: url(../images/features-suggestion.png);
-    @include feature-foto-settings;
+    @include feature-photo-settings;
 }
 
 #features-compare {
     background-image: url(../images/features-compare.png);
-    @include feature-foto-settings;
+    @include feature-photo-settings;
 }
 
 #features-nav {
     background-image: url(../images/features-nav.png);
-    @include feature-foto-settings;
+    @include feature-photo-settings;
 }
 
 #features-list {
     background-image: url(../images/features-list.png);
-    @include feature-foto-settings;
+    @include feature-photo-settings;
 }
 
 .features-title {
-    font-size: 20px;
     margin-top: 150px;
     text-align: center;
+    font-size: $font-size - 0.2em;
+    font-weight: 700;
 }
 
 .features-description{
-    text-align: justify;
-    padding: 30px;
+    text-align: center;
+    padding: 30px 10px 30px;
+    font-size: $font-size - 0.5em;
 }
 
 #team {
@@ -70,12 +80,14 @@ $team-background-color: rgba(176, 176, 176, 0.47);
 .team-header {
     text-align: center;
     margin: 20px 0 20px;
-    color: $font-color:;
+    color: $font-color;
+    font-size: $font-size - 0.5em;
 }
 
 .team-title {
     text-align: center;
-    padding: 0 50px 20px;
+    padding: 0 20px 40px;
+    font-size: $font-size - 0.9em;
 }
 
 #team-section {
@@ -89,17 +101,24 @@ $team-background-color: rgba(176, 176, 176, 0.47);
     width: 100%;
     height: 100%;
     padding: 20px;
+    padding-top: 40px;
     text-align: center;
     margin: 0 0 2% 0;
+    border-top: 1px outset #dfdfe2;
+}
+
+div.team-members:first-child {
+    border-top: hidden;
 }
 
 .team-members img {
     max-width:300px;
     width: 100%;
+    border-radius: 50%;
 }
 
-.team-foto {
-    opacity: 0.2;
+.team-photo {
+    opacity: 0.5;
     filter: grayscale(90%);
     margin-bottom: 10px;
 }
@@ -116,19 +135,32 @@ $team-background-color: rgba(176, 176, 176, 0.47);
     width: 100%;
     text-align: justify;
     margin: auto;
+    font-size: $font-size - 1em;
 }
 
-.team-foto:hover{
-    opacity: 0.5;
-    transition: opacity 2.9s;
+.team-photo:hover {
+    opacity: 1;
+    transition: opacity 0.9s;
+}
+
+.team-clear {
+    clear: both;
 }
 
 @media screen and (min-width:800px) {
     .team-members {
         width: 23%;
         margin: 0 1% 0 1%;
+        border-bottom: hidden;
+        border-left: inset #dfdfe2;
     }
 
-.team-clear {
-    clear: both;
+    .team-clear {
+        clear: both;
+    }
+
+    div.team-members:first-child {
+        border-left: hidden;
+    }
 }
+
