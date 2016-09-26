@@ -144,7 +144,7 @@ li a:hover {
 
 footer {
   background-color: rgba(253, 253, 253, 0.9);
-  padding-top: 20px; }
+  padding: 20px 0 1px; }
 
 a.footer-social-icons {
   color: black;
@@ -233,9 +233,6 @@ a.footer-social-icons {
   color: black;
   float: right;
   margin-right: 10px; }
-
-footer, #footer-socials-text {
-  padding-bottom: 1px; }
 
 #footer-credits {
   text-align: center;
