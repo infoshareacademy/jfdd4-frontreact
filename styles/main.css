@@ -159,11 +159,8 @@ li a:hover {  transform: scale(1.5);  }
     top:1px;
 }
 
-
-/*PATRYK*/
 #intro
 {
-
     background-image: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/background/8.jpg);
     background-size: cover;
     background-position: center;
