@@ -1,6 +1,7 @@
 footer
 {
-  background-color: rgba(217, 219, 255, 0.9);
+  background-color: rgba(253, 253, 253, 0.9);
+  padding-top: 20px;
 }
 a.footer-social-icons
 {
@@ -55,7 +56,7 @@ a.footer-social-icons
   background-color: red;
 }
 @mixin footer-font
-{font-size: 15px; font-style: italic; text-align: left; color: black;}
+{font-size: 15px; ; text-align: left; color: black;}
 #footer-poznajmy-text
 {
   @include footer-font;
@@ -70,12 +71,14 @@ a.footer-social-icons
 }
 footer, #footer-socials-text
 {
-  padding-bottom: 8px;
+  padding-bottom: 1px;
 }
 #footer-credits
 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: #fff;
+  background-color: #dfdfe2;
+  color: black;
+  padding-bottom: 1px;
   width: 100%;
+  font-size: 10px;
 }

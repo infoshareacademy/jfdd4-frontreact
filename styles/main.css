@@ -142,11 +142,15 @@ li a:hover {
   opacity: 0.7;
   text-decoration: none; }
 
-a.linksocial {
+footer {
+  background-color: rgba(253, 253, 253, 0.9);
+  padding-top: 20px; }
+
+a.footer-social-icons {
   color: black;
   text-decoration: none; }
 
-#yt {
+#footer-youtube-icon {
   float: left;
   width: 100px;
   height: 100px;
@@ -155,7 +159,7 @@ a.linksocial {
   margin-left: 20px;
   transition: background-color 1500ms,  color 1500ms, transform 1500ms; }
 
-#fc {
+#footer-facebook-icon {
   float: left;
   width: 100px;
   height: 100px;
@@ -164,7 +168,7 @@ a.linksocial {
   margin-left: 20px;
   transition: background-color 1500ms,  color 1500ms, transform 1500ms; }
 
-#gplus {
+#footer-googleplus-icon {
   float: left;
   width: 100px;
   height: 100px;
@@ -173,7 +177,7 @@ a.linksocial {
   margin-left: 20px;
   transition: background-color 1500ms,  color 1500ms, transform 1500ms; }
 
-#ins {
+#footer-instagram-icon {
   float: left;
   width: 100px;
   height: 100px;
@@ -182,7 +186,7 @@ a.linksocial {
   margin-left: 20px;
   transition: background-color 1500ms,  color 1500ms, transform 1500ms; }
 
-#gmail {
+#footer-gmail-icon {
   float: left;
   width: 100px;
   height: 100px;
@@ -191,54 +195,55 @@ a.linksocial {
   margin-left: 20px;
   transition: background-color 1500ms,  color 1500ms, transform 1500ms; }
 
-#yt:hover {
+#footer-youtube-icon:hover {
   color: white;
   transform: rotate(360deg);
   background-color: #CC181E; }
 
-#fc:hover {
+#footer-facebook-icon:hover {
   color: white;
   transform: rotate(360deg);
   background-color: #3B5998; }
 
-#gplus:hover {
+#footer-googleplus-icon:hover {
   color: white;
   transform: rotate(360deg);
   background-color: #dd4b39; }
 
-#ins:hover {
+#footer-instagram-icon:hover {
   color: white;
   transform: rotate(360deg);
   background-color: #405de6; }
 
-#gmail:hover {
+#footer-gmail-icon:hover {
   color: white;
   transform: rotate(360deg);
   background-color: red; }
 
-#be {
-  font-size: 20px;
-  font-style: italic;
+#footer-poznajmy-text {
+  font-size: 15px;
   text-align: left;
   color: black;
   float: left;
   margin-left: 10px; }
 
-#contact {
-  font-size: 20px;
-  font-style: italic;
+#footer-kontakt-text {
+  font-size: 15px;
   text-align: left;
   color: black;
   float: right;
   margin-right: 10px; }
 
-#footer, #socials {
-  padding: 20px; }
+footer, #footer-socials-text {
+  padding-bottom: 1px; }
 
-#credits {
+#footer-credits {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: #fff; }
+  background-color: #dfdfe2;
+  color: black;
+  padding-bottom: 1px;
+  width: 100%;
+  font-size: 10px; }
 
 #features {
   display: flex;
