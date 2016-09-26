@@ -159,8 +159,6 @@ li a:hover {  transform: scale(1.5);  }
     top:1px;
 }
 
-
-/*PATRYK*/
 #intro
 {
 
@@ -173,7 +171,6 @@ li a:hover {  transform: scale(1.5);  }
     height: 100%;
 }
 
-/*MALY LOGOTYP SERWISU*/
 
 .logo {
     display: block;
@@ -182,7 +179,6 @@ li a:hover {  transform: scale(1.5);  }
     float: left;
     padding-top: 50px;
 }
-/*NAPIS PROMUJACY*/
 
 .slogan {
     padding: 25% 10px 5%;
@@ -206,7 +202,6 @@ li a:hover {  transform: scale(1.5);  }
     line-height: 31px;
 
 }
-/*PATRYK*/
 
 /*Karol*/
 #be
