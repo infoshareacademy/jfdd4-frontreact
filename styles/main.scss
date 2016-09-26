@@ -1,7 +1,7 @@
 body
 {
     background-color: #f5f5f8;
-    margin: 0px;
+    margin: 0;
 }
 
 #features {
@@ -277,7 +277,7 @@ li a:hover {  transform: scale(1.5);  }
     opacity: 0.5;
     background-color: #fff76c;
     font-size: 28px;
-    box-shadow: 0px 0px 222px white;
+    box-shadow: 0 0 222px white;
     color: black;
     font-family: 'Courgette', cursive;
 }
@@ -288,4 +288,4 @@ li a:hover {  transform: scale(1.5);  }
 }
 
 @import "_footer.scss";
-@import "_features-team";
+@import "_features-team.scss";
