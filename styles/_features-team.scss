@@ -1,12 +1,10 @@
-$font-size: 2em;
+$font-size: 1.8em;
 $font-color: rgba(6, 6, 6, 0.92);
-$font-stack: Courier 10 Pitch, sans-serif;
+$font-stack: 'Lato', sans-serif;
 $feature-background-color: #f6f6f6;
 $team-background-color: #f6f6f6;
 
-body {
-    min-width: 370px;
-}
+
 #features {
     display: flex;
     flex-flow: row wrap;
@@ -23,9 +21,8 @@ body {
     border-bottom: inset;
 }
 
-/*podswietlanie feature*/
 .features-feature:hover {
-background-color: #ebebeb;
+    background-color: #ebebeb;
 }
 
 .features-line-break {
@@ -36,6 +33,7 @@ background-color: #ebebeb;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100px;
+    padding-top: 10px;
 }
 
 #features-suggestion {
@@ -61,14 +59,14 @@ background-color: #ebebeb;
 .features-title {
     margin-top: 150px;
     text-align: center;
-    font-size: $font-size - 0.2em;
+    font-size: $font-size - 0.5em;
     font-weight: 700;
 }
 
 .features-description{
     text-align: center;
     padding: 30px 10px 30px;
-    font-size: $font-size - 0.5em;
+    font-size: $font-size - 0.8em;
 }
 
 #team {
@@ -88,6 +86,7 @@ background-color: #ebebeb;
     text-align: center;
     padding: 0 20px 40px;
     font-size: $font-size - 0.9em;
+    color: $font-color;
 }
 
 #team-section {
@@ -112,13 +111,13 @@ div.team-members:first-child {
 }
 
 .team-members img {
-    max-width:300px;
+    max-width:200px;
     width: 100%;
     border-radius: 50%;
 }
 
 .team-photo {
-    opacity: 0.5;
+    opacity: 0.8;
     filter: grayscale(90%);
     margin-bottom: 10px;
 }
@@ -127,6 +126,8 @@ div.team-members:first-child {
     margin: auto;
     text-align: center;
     padding: 20px;
+    color: $font-color;
+    font-size: $font-size - 0.6em;
 }
 
 .team-description {
@@ -151,8 +152,8 @@ div.team-members:first-child {
     .team-members {
         width: 23%;
         margin: 0 1% 0 1%;
-        border-bottom: hidden;
-        border-left: inset #dfdfe2;
+        border-top: hidden;
+        border-left: 1px outset #dfdfe2;
     }
 
     .team-clear {
