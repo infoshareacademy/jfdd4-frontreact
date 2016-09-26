@@ -80,10 +80,8 @@ li a:hover {
   position: relative;
   top: 1px; }
 
-/*PATRYK*/
 #intro {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/background/8.jpg);
-  /*background-image: url(../images/background/10.jpg);*/
   background-size: cover;
   background-position: center;
   transition: 2s ease;
@@ -91,7 +89,6 @@ li a:hover {
   background-repeat: no-repeat;
   height: 100%; }
 
-/*MALY LOGOTYP SERWISU*/
 .logo {
   display: block;
   position: inherit;
@@ -99,7 +96,6 @@ li a:hover {
   float: left;
   padding-top: 50px; }
 
-/*NAPIS PROMUJACY*/
 .slogan {
   padding: 25% 10px 5%;
   text-align: center;
@@ -110,8 +106,7 @@ li a:hover {
 .slogan h1 {
   color: antiquewhite;
   font-weight: bold;
-  font-size: 48px;
-  /*font-family: "Courier 10 Pitch";*/ }
+  font-size: 48px; }
 
 .slogan p {
   margin-top: 20px;
