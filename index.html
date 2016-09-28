@@ -2,176 +2,196 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Sugero.pl</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-<nav class="navigation-nav" id="navigation">
-    <ul class="navigationul">
-        <li class="navigation">
-            <a class="navigation" href="#intro">Start</a> </li>
-        <li class="navigation">
-            <a class="navigation" href="#features">Funkcje</a></li>
-        <li class="navigation">
-            <a class="navigation" href="#singup">Dowiedz sie wiecej</a></li>
-        <li class="navigation">
-            <a class="navigation" href="#team" >Zespol</a></li>
-        <li class="floating-clear"></li>
-    </ul>
+<header>
+    <nav class="navigation-nav" id="navigation">
+        <ul class="navigation-ul">
+            <li class="navigation">
+                <a class="navigation" href="#intro">
+                    Start
+                </a>
+            </li>
+            <li class="navigation">
+                <a class="navigation" href="#features">
+                    Funkcje
+                </a>
+            </li>
+            <li class="navigation">
+                <a class="navigation" href="#singup">
+                    Dowiedź się więcej
+                </a>
+            </li>
+            <li class="navigation">
+                <a class="navigation" href="#team">
+                    Zespół
+                </a>
+            </li>
+            <li class="floating-clear"></li>
+        </ul>
     </nav>
 
-<div id="intro">
-    <div class="logo">
-        <p></p><img class="logo" src="images/background/logo31.png" alt="logo">
+    <div id="intro">
+        <div class="logo">
+            <img class="logo" src="images/background/logo31.png" alt="logo">
+        </div>
+        <div class="slogan" style="">
+            <h1>
+                Wybierzesz najlepsze produkty ekologiczne
+            </h1>
+            <p>
+                Nie ruszając się z domu. Nigdy nie było to takie proste!
+            </p>
+            <a href="#singup" style="text-decoration: none;">
+                <div id="subscribe">Dowiedź się więcej</div>
+            </a>
+        </div>
     </div>
-    <div class="slogan" style="">
-        <h1>Wybierzesz najlepsze produkty</h1>
-        <p>Nie ruszając się z domu. Nigdy nie było to takie proste!</p>
-        <a href="#singup" style="text-decoration: none;">
-            <div id="subscribe">Dowiedz się więcej</div>
-        </a>
-    </div>
-</div>
-<div id="features">
-    <div id="features-suggestion" class="features-feature">
-        <p class="features-title">
-            Sugerowane produkty
-        </p>
-        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.
-        </p>
-    </div>
-    <div id="features-compare" class="features-feature">
-        <p class="features-title">
-            Porównaj ceny
-        </p>
-        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.
-        </p>
-    </div>
-    <div class="features-line-break"></div>
-    <div id="features-nav" class="features-feature">
-        <p class="features-title">
-            Lokalizacje sklepów z produktami
-        </p>
-        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.
-        </p>
-    </div>
-    <div id="features-list" class="features-feature">
-        <p class="features-title">
-            Lista zakupów
-        </p>
-        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.
-        </p>
-    </div>
-</div>
-<section id="singup">
-<div class="signup">
-    <form action="http://tools.is-academy.pl/mailer.php" method="post">
-        <p class="singup-title">
-            Obiecujemy skontaktować się z tobą tylko RAZ!:
-        </p><br>
-        <input class="input-email" type="email" placeholder="Your email...." name="email"  autofocus>
-        <input type="hidden" name="receiver" value="wildmanblues@op.pl">
-        <input class="my-button" type="submit">
-    </form>
-</div>
-</section>
+</header>
+<main>
+    <section id="features">
+        <div id="features-suggestion" class="features-feature">
+            <p class="features-title">
+                Sugerowane produkty
+            </p>
+            <p class="features-description">
+                Wybierzemy najlepsze produkty oraz podpowiemy co moze ciebie zainteresować.
+            </p>
+        </div>
+        <div id="features-compare" class="features-feature">
+            <p class="features-title">
+                Porównaj ceny
+            </p>
+            <p class="features-description">
+                Podpowiemy gdzie kupić wybrany produkt w najlepszej cenie.
+            </p>
+        </div>
+        <div class="features-line-break"></div>
+        <div id="features-nav" class="features-feature">
+            <p class="features-title">
+                Lokalizacje sklepów
+            </p>
+            <p class="features-description">
+                Znajdziemy ulubione produkty w Twojej okolicy.
+            </p>
+        </div>
+        <div id="features-list" class="features-feature">
+            <p class="features-title">
+                Lista zakupów
+            </p>
+            <p class="features-description">
+                Pomożemy szybko tworzyć i zarządzać listami zakupów w wygodny sposób.
+            </p>
+        </div>
+    </section>
+    <section id="singup">
+        <div class="signup">
+            <form action="http://tools.is-academy.pl/mailer.php" method="post">
+                <p class="singup-title">
+                    Obiecujemy skontaktować się z tobą tylko RAZ!:
+                </p><br>
+                <input class="input-email" type="email" placeholder="Your email...." name="email">
+                <input type="hidden" name="receiver" value="wildmanblues@op.pl">
+                <input class="button-for-form-subskribe" type="submit">
+            </form>
+        </div>
+    </section>
 
-<section id="team">
-    <header class="team-header">Zespół</header>
-    <p class="team-title">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Inventore maxime corporis similique, tempore tenetur ipsum
-        eligendi animi illo deleniti voluptatum.
-    </p>
-    <div id="team-section">
-        <div class="team-members">
-            <img class="team-foto " src="images/face.jpeg" alt="zdjecie-piotr">
-            <h2 class="team-name">Piotr</h2>
-            <p class="team-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-                nec dui aliquet fringilla vulputate vel tellus. Cras eleifend nunc ac risus.
-            </p>
+    <section id="team">
+        <header class="team-header">Zespół</header>
+        <p class="team-title">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Inventore maxime corporis similique, tempore tenetur ipsum
+            eligendi animi illo deleniti voluptatum.
+        </p>
+        <div id="team-section">
+            <div class="team-members">
+                <img class="team-photo " src="images/team-photo-Piotr.jpg" alt="zdjecie-piotr">
+                <h2 class="team-name">Piotr</h2>
+                <p class="team-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed maximus lorem ut massa pharetra ornare. Nullam in quam
+                </p>
+            </div>
+            <div class="team-members">
+                <img class="team-photo" src="images/team-photo-Patryk.jpg" alt="zdjecie-patryk">
+                <h2 class="team-name">Patryk</h2>
+                <p class="team-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed maximus lorem ut massa pharetra ornare. Nullam in quam
+                </p>
+            </div>
+            <div class="team-members">
+                <img class="team-photo" src="images/team-photo-Karol.jpg" alt="zdjecie-karol">
+                <h2 class="team-name">Karol</h2>
+                <p class="team-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed maximus lorem ut massa pharetra ornare. Nullam in quam
+                </p>
+            </div>
+            <div class="team-members">
+                <img class="team-photo" src="images/team-photo-Beata.jpg" alt="zdjecie-beata">
+                <h2 class="team-name">Beata</h2>
+                <p class="team-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed maximus lorem ut massa pharetra ornare. Nullam in quam
+                </p>
+            </div>
+            <div class="team-clear"></div>
         </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-patryk">
-            <h2 class="team-name">Patryk</h2>
-            <p class="team-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            </p>
-        </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-karol">
-            <h2 class="team-name">Karol</h2>
-            <p class="team-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            </p>
-        </div>
-        <div class="team-members">
-            <img class="team-foto" src="images/face.jpeg" alt="zdjecie-beata">
-            <h2 class="team-name">Beata</h2>
-            <p class="team-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed maximus lorem ut massa pharetra ornare. Nullam in quam
-            </p>
-        </div>
-        <div class="team-clear"></div>
+    </section>
+</main>
+<footer>
+    <div id="footer-poznajmy-text">
+        <h1>
+            Poznajmy się
+        </h1>
     </div>
-</section>
-
-<div id="footer">
-    <div id="be">
-        <h1>Bądźmy blisko</h1>
-    </div>
-    <div id="contact">
+    <div id="footer-kontakt-text">
         <h1>Kontakt</h1>
     </div>
     <div style="clear: both"></div>
-    <div id="socials">
-        <a href="https://facebook.com" class="linksocial" target="_blank">
-            <div id="fc">
+    <div id="footer-socials-text">
+        <a href="https://facebook.com" class="footer-social-icons" target="_blank">
+            <div id="footer-facebook-icon">
                 <i class="icon-facebook"></i>
             </div>
         </a>
-        <a href="htps://googleplus.com" class="linksocial" target="_blank">
-            <div id="gplus">
+        <a href="htps://googleplus.com" class="footer-social-icons" target="_blank">
+            <div id="footer-googleplus-icon">
                 <i class="icon-googleplus"></i>
             </div>
         </a>
-        <a href="https://www.instagram.com" class="linksocial" target="_blank">
-            <div id="ins">
+        <a href="https://www.instagram.com" class="footer-social-icons" target="_blank">
+            <div id="footer-instagram-icon">
                 <i class="icon-instagram"></i>
             </div>
         </a>
-        <a href="https://youtube.pl" class="linksocial" target="_blank">
-            <div id="yt">
+        <a href="https://youtube.pl" class="footer-social-icons" target="_blank">
+            <div id="footer-youtube-icon">
                 <i class="icon-youtube"></i>
             </div>
         </a>
-        <a href="mailto:frontreact@infoshareacadey.pl?Subject=Hello%20again" class="linksocial" target="_blank" style="float: right">
-            <div id="gmail">
+        <a href="mailto:frontreact@infoshareacadey.pl?Subject=Hello%20again" class="footer-social-icons" target="_blank" style="float: right">
+            <div id="footer-gmail-icon">
                 <i class="icon-gmail"></i>
             </div>
         </a>
         <div style="clear: both"></div>
     </div>
-    <div id="credits" style="clear: both">
-        <p>© Copyright 2016</p>
+    <div id="footer-credits" style="clear: both">
+        <p>
+            © Copyright 2016
+        </p>
         <p>
             Wszystkie prawa zastrzeżone. Wszystkie teksty, zdjęcia, grafika, ścieżki dźwiękowe, wideo i animacji danych jak również ich skład lub układ są chronione prawami autorskimi i innymi prawami ochronnymi. Ich zawartość nie mogą być kopiowane do celów komercyjnych lub innych, ani nie może on być wyświetlany, nawet w zmodyfikowanej wersji na innych stronach internetowych.
         </p>
     </div>
-</div>
+</footer>
 </body>
 </html>
