@@ -54,7 +54,7 @@
     </div>
 </header>
 <main>
-    <section id="features">
+    <section id="features" class="section">
         <div id="features-suggestion" class="features-feature">
             <p class="features-title">
                 Sugerowane produkty
@@ -89,7 +89,7 @@
             </p>
         </div>
     </section>
-    <section id="singup">
+    <section id="singup" class="section">
         <div class="signup">
             <form action="http://tools.is-academy.pl/mailer.php" method="post">
                 <p class="singup-title">
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section id="team">
+    <section id="team" class="section">
         <header class="team-header">Zespół</header>
         <p class="team-title">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -200,5 +200,20 @@
         </p>
     </div>
 </footer>
+
+<script src="lib/jquery-2.1.4.min.js">
+    $(window).scroll(function(){
+        var position = (this).scrollTop();
+        $('.section').each(function () {
+            var target = $(this.offset().top;
+            )
+
+        })
+    }
+    )
+
+</script>
+
+
 </body>
 </html>
