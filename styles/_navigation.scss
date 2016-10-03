@@ -37,9 +37,17 @@ li {
   clear: both;
 }
 
+.test {
+  background-color: #2f6627;
+}
 
+li a:hover {
+  transform: scale(1.5);
+}
+.active {
+  transform: scale(1.5);
 
-li a:hover {  transform: scale(1.5);  }
+}
 
 .signup {
   text-align: center;

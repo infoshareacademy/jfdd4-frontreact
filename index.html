@@ -36,7 +36,7 @@
         </ul>
     </nav>
 
-    <div id="intro">
+    <div id="intro" class="section">
         <div class="logo">
             <img class="logo" src="images/background/logo31.png" alt="logo">
         </div>
@@ -201,16 +201,30 @@
     </div>
 </footer>
 
-<script src="lib/jquery-2.1.4.min.js">
-    $(window).scroll(function(){
-        var position = (this).scrollTop();
-        $('.section').each(function () {
-            var target = $(this.offset().top;
-            )
+<script src="styles/lib/jquery-2.1.4.min.js"></script>
 
-        })
-    }
-    )
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var position = $(this).scrollTop();
+
+            console.log('position')
+            console.log(position)
+            $('.section').each(function () {
+                var target = $(this).offset().top;
+                console.log('target')
+                console.log(target)
+                var id = $(this).attr('id');
+
+                if (position >= target) {
+                    console.log('cos')
+                    $('#navigation > ul > li > a').removeClass('active');
+                    $('#navigation > ul > li > a[href=#' + id + ']').addClass('active');
+                }
+            })
+
+        });
+    });
 
 </script>
 
