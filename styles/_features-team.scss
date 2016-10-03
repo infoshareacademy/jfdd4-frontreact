@@ -78,28 +78,97 @@ div.features-feature:last-child {
     border-bottom: hidden;
 }
 
+.team-container-photo {
+    width:160px;
+    height:160px;
+    margin:0 auto;
+    perspective:160px;
+    border-radius: 50%;
+}
+
+.team-obverse-reverse {
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:1s;
+    transform-style:preserve-3d;
+}
+
+.rotation {
+    transform:rotateY(180deg);
+}
+
+.team-black-obverse {
+    position:absolute;
+    width:100%;
+    height:100%;
+    line-height:160px;
+    background-color:#000;
+    color:#FFF;
+    font-size:1.6em;
+    backface-visibility:hidden;
+    border-radius: 50%;
+}
+
+.team-photo-reverse-Piotr {
+    line-height:160px;
+    transform:rotateY(180deg);
+    background:url('../images/team-photo-Piotr.jpg') no-repeat;
+    background-size:100%;
+    backface-visibility:hidden;
+    border-radius: 50%;
+    filter: grayscale(90%);
+}
+
+.team-photo-reverse-Patryk {
+    line-height:160px;
+    transform:rotateY(180deg);
+    background:url('../images/team-photo-Patryk.jpg') no-repeat;
+    background-size:100%;
+    backface-visibility:hidden;
+    border-radius: 50%;
+    filter: grayscale(90%);
+}
+
+.team-photo-reverse-Karol {
+    line-height:160px;
+    transform:rotateY(180deg);
+    background:url('../images/team-photo-Karol.jpg') no-repeat;
+    background-size:100%;
+    backface-visibility:hidden;
+    border-radius: 50%;
+    filter: grayscale(90%);
+}
+
+.team-photo-reverse-Beata {
+    line-height:160px;
+    transform:rotateY(180deg);
+    background:url('../images/team-photo-Beata.jpg') no-repeat;
+    background-size:100%;
+    backface-visibility:hidden;
+    border-radius: 50%;
+    filter: grayscale(90%);
+}
+
 #team {
     margin: 0;
     padding-top: 40px;
-    background-color: $team-background-color;
-}
+    background-color: #f6f6f6; }
 
 .team-header {
     text-align: center;
     margin: 20px 0 20px;
-    color: $font-color;
-    font-size: $font-size - 0.5em;
-}
+    color: rgba(6, 6, 6, 0.92);
+    font-size: 1.3em; }
 
 .team-title {
     text-align: center;
     padding: 0 20px 40px;
-    font-size: $font-size - 0.9em;
-    color: $font-color;
-}
+    font-size: 0.9em;
+    color: rgba(6, 6, 6, 0.92); }
 
 #team-section {
-    background-color: $team-background-color;
+    background-color: #f6f6f6;
 }
 
 .team-members {
@@ -111,7 +180,7 @@ div.features-feature:last-child {
     padding: 20px;
     padding-top: 40px;
     text-align: center;
-    margin: 0 0 2% 0;
+    margin: 0 0 0 0;
     border-top: 1px outset #dfdfe2;
 }
 
@@ -119,43 +188,23 @@ div.team-members:first-child {
     border-top: hidden;
 }
 
-.team-members img {
-    max-width:200px;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.team-photo {
-    opacity: 0.8;
-    filter: grayscale(90%);
-    margin-bottom: 10px;
-}
-
 .team-name {
     margin: auto;
     text-align: center;
     padding: 20px;
-    color: $font-color;
-    font-size: $font-size - 0.6em;
-}
+    color: rgba(6, 6, 6, 0.92);
+    font-size: 1.2em; }
 
 .team-description {
-    color: $font-color;
+    color: rgba(6, 6, 6, 0.92);
     max-width: 300px;
     width: 100%;
     text-align: justify;
     margin: auto;
-    font-size: $font-size - 1em;
-}
-
-.team-photo:hover {
-    opacity: 1;
-    transition: opacity 0.9s;
-}
+    font-size: 0.8em; }
 
 .team-clear {
-    clear: both;
-}
+    clear: both; }
 
 @media screen and (min-width:800px) {
     .features-feature {
@@ -173,7 +222,7 @@ div.team-members:first-child {
     .features-feature-clear {
         clear: both;
     }
-    
+
     .team-members {
         width: 23%;
         margin: 0 1% 0 1%;
@@ -189,4 +238,3 @@ div.team-members:first-child {
         border-left: hidden;
     }
 }
-

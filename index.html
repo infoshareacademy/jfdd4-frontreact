@@ -111,7 +111,12 @@
         </p>
         <div id="team-section">
             <div class="team-members">
-                <img class="team-photo " src="images/team-photo-Piotr.jpg" alt="zdjecie-piotr">
+                <div class="team-container-photo">
+                    <div id="team-first-photo" class="team-obverse-reverse">
+                        <div class="team-black-obverse"></div>
+                        <div class="team-photo-reverse-Piotr">&nbsp;</div>
+                    </div>
+                </div>
                 <h2 class="team-name">Piotr</h2>
                 <p class="team-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -119,7 +124,12 @@
                 </p>
             </div>
             <div class="team-members">
-                <img class="team-photo" src="images/team-photo-Patryk.jpg" alt="zdjecie-patryk">
+                <div class="team-container-photo">
+                    <div class="team-obverse-reverse">
+                        <div class="team-black-obverse"></div>
+                        <div class="team-photo-reverse-Patryk">&nbsp;</div>
+                    </div>
+                </div>
                 <h2 class="team-name">Patryk</h2>
                 <p class="team-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -127,7 +137,12 @@
                 </p>
             </div>
             <div class="team-members">
-                <img class="team-photo" src="images/team-photo-Karol.jpg" alt="zdjecie-karol">
+                <div class="team-container-photo">
+                    <div class="team-obverse-reverse">
+                        <div class="team-black-obverse"></div>
+                        <div class="team-photo-reverse-Karol">&nbsp;</div>
+                    </div>
+                </div>
                 <h2 class="team-name">Karol</h2>
                 <p class="team-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -135,7 +150,12 @@
                 </p>
             </div>
             <div class="team-members">
-                <img class="team-photo" src="images/team-photo-Beata.jpg" alt="zdjecie-beata">
+                <div class="team-container-photo">
+                    <div class="team-obverse-reverse">
+                        <div class="team-black-obverse"></div>
+                        <div class="team-photo-reverse-Beata">&nbsp;</div>
+                    </div>
+                </div>
                 <h2 class="team-name">Beata</h2>
                 <p class="team-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -193,5 +213,31 @@
         </p>
     </div>
 </footer>
+
+<script src="lib/jquery-2.1.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var position = $(this).scrollTop();
+
+            $('.section').each(function () {
+                var target = $(this).offset().top-20;
+
+                var id = $(this).attr('id');
+
+                if (position >= target) {
+                    $('#navigation > ul > li > a').removeClass('active');
+                    $('#navigation > ul > li > a[href=#' + id + ']').addClass('active');
+                }
+            })
+
+        });
+
+    });
+
+</script>
+
+<script src="script/team-rotation.js" ></script>
 </body>
 </html>
