@@ -98,13 +98,47 @@
                 <p>Zostaw swoj email, a powiadomimy Cie o premierze naszej aplikacji</p>
                 <input class="input-email" type="email" placeholder="Twój email...." name="email">
                 <input type="hidden" name="receiver" value="wildmanblues@op.pl">
-                <input class="button-for-form-subskribe" type="submit" value="Wyślij">
+                <input class="button-for-form-subskribe" id="myBtn" type="submit" value="Wyślij">
             </form><br>
 
             <div class="declaration">Zgodnie z art. 24 ust. 1 ustawy z dnia 29
                 sierpnia z dnia 29 sierpnia 1997 r. o ochronie danych osobowych
                 (t.j. Dz. U. z 2015 r., poz. 2135 z późn. zm) informujemy, iż administratorem
                 danych jest:..
+            </div>
+
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">×</span>
+                    <table>TABELA Z GRA</table>
+                </div>
+                <script>
+                    // definiujemy okienko modalne
+                    var modal = document.getElementById('myModal');
+
+                    // button dla okienka modalnego
+                    var btn = document.getElementById("myBtn");
+
+                    // klasa<span> zamykajaca (x) okienko
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // gdy uzytkownik kliknie button otworzy okno
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // klikniecie w spana (z) zamkniecie okienka
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                </script>
+
             </div>
         </div>
     </section>
