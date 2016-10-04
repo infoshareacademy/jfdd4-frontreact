@@ -6,91 +6,6 @@ body
     min-width: 370px;
 }
 
-.navigation-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.navigation-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(139,133,135,0.5);
-}
-
-
-li {
-    float: left;
-}
-
-.navigation {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    transition: 1s transform 5ms;
-    font-size: 1em; /* dodalam 1.1*/
-}
-
-
-.floating-clear {
-    clear: both;
-}
-
-
-
-li a:hover {  transform: scale(1.5);  }
-
-.signup {
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: auto;
-    background-color: #ffffff;
-}
-
-
-.singup-title {
-    /*margin-left: -180px;*/ /* dodalam*/
-    font-size: 2em;   /* dodalam*/
-}
-
-.input-email {
-    width: 400px;
-    height: 40px;
-
-}
-
-.button-for-form-subskribe {
-    background-color: #3e528b;
-    -moz-border-radius:28px;
-    -webkit-border-radius:28px;
-    border-radius:28px;
-    border:1px solid #61848b;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Lato', sans-serif; /*dodalam*/
-    font-size:17px;
-    padding:13px 21px;
-    text-decoration:none;
-    text-shadow:0 1px 0 #2f6627;
-}
-.button-for-form-subskribe:hover {
-    background-color: #a469bf;
-}
-.button-for-form-subskribe:active {
-    position:relative;
-    top:1px;
-}
 
 
 /*PATRYK*/
@@ -166,3 +81,4 @@ li a:hover {  transform: scale(1.5);  }
 
 @import "_footer.scss";
 @import "_features-team.scss";
+@import "navigation.scss";
