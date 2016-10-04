@@ -64,7 +64,7 @@ body
     opacity: 0.5;
     background-color: #fff76c;
     font-size: 28px;
-    box-shadow: 0px 0px 222px white;
+    box-shadow: 0 0 222px white;
     color: black;
     /*font-family: 'Courgette', cursive;*/
     font-family: 'Lato', sans-serif; /*dodalam*/
@@ -82,3 +82,4 @@ body
 @import "_footer.scss";
 @import "_features-team.scss";
 @import "_navigation.scss";
+@import "game.scss";

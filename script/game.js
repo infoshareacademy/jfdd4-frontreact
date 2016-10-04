@@ -9,14 +9,20 @@ var modal = document.getElementById('myModal');
 //button otwierajacy modalne okno
 var btn = document.getElementById("myBtn");
 
-//<span> zamykajacy okienko
+//<span> zamykajacy okienko / sprawdzenie validity 
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
-    modal.style.display= "block";
-}
+    console.log('show game board');
+
+    var isFormValid = $('input.input-email').get(0).checkValidity();
+    if (isFormValid){
+        modal.style.display= "block";
+    }
+};
+
 
 //gdy uzytkownik kliknie w spana (x) - zamykanie okienka
 span.onclick = function () {
     modal.style.display = "none";
-}
+};
 
