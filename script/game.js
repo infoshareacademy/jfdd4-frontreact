@@ -2,6 +2,7 @@
  * Created by patryk on 10/3/16.
  */
 
+//
 
 // modal window to create the table where the game will be show
 var modal = document.getElementById('myModal');
@@ -19,7 +20,6 @@ btn.onclick = function() {
         modal.style.display= "block";
     }
 };
-
 
 //gdy uzytkownik kliknie w spana (x) - zamykanie okienka
 span.onclick = function () {
