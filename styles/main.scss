@@ -8,18 +8,18 @@ body
 
 
 
-/*PATRYK*/
-#intro
-{
-    background-image: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/background/8.jpg);
-    /*background-image: url(../images/background/10.jpg);*/
-    background-size: cover;
-    background-position: center;
-    transition: 2s ease;
-    position: relative;
-    background-repeat: no-repeat;
-    height: 100%;
-}
+///*PATRYK*/
+//#intro
+//{
+//    background-image: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/background/8.jpg);
+//    /*background-image: url(../images/background/10.jpg);*/
+//    background-size: cover;
+//    background-position: center;
+//    transition: 2s ease;
+//    position: relative;
+//    background-repeat: no-repeat;
+//    height: 100%;
+//}
 
 /*MALY LOGOTYP SERWISU*/
 
@@ -78,7 +78,7 @@ body
 }
 
 
-
+@import "slideshow";
 @import "_footer.scss";
 @import "_features-team.scss";
 @import "navigation.scss";

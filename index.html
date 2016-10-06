@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin-ext" rel="stylesheet">
+    <script src="styles/lib/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 <header>
@@ -36,21 +37,40 @@
         </ul>
     </nav>
 
-    <div id="intro" class="section">
-        <div class="logo">
-            <img class="logo" src="images/background/logo31.png" alt="logo">
+    <div id="slideShow">
+        <div class="slider">
+            <img class="slide" id="slide_1" src="images/slajdy/slide_1.png"/>
+            <img class="slide" id="slide_2" src="images/slajdy/slide_2.png"/>
+            <img class="slide" id="slide_3" src="images/slajdy/slide_3.png"/>
+            <img class="slide" id="slide_4" src="images/slajdy/slide_4.png"/>
+            <img class="slide" id="slide_5" src="images/slajdy/slide_5.png"/>
         </div>
-        <div class="slogan" style="">
-            <h1>
-                Wybierzesz najlepsze produkty ekologiczne
-            </h1>
-            <p>
-                Nie ruszając się z domu. Nigdy nie było to takie proste!
-            </p>
-            <a href="#singup" style="text-decoration: none;">
-                <div id="subscribe">Dowiedź się więcej</div>
-            </a>
+        <div id="slider-button-left">
+            <img id="slider-button-left-pic" src="images/arrow-left.png"/>
         </div>
+        <div id="slider-button-right">
+            <img id="slider-button-right-pic" src="images/arrow-right.png"/>
+        </div>
+        <div id="slider-buttons-bottom">
+            <img id="slider-button-bottom_1" src="images/circle-button.png"/>
+            <img id="slider-button-bottom_2" src="images/circle-button.png"/>
+            <img id="slider-button-bottom_3" src="images/circle-button.png"/>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img class="logo" src="images/background/logo31.png" alt="logo">
+    </div>
+    <div class="slogan" style="">
+        <h1>
+            Wybierzesz najlepsze produkty ekologiczne
+        </h1>
+        <p>
+            Nie ruszając się z domu. Nigdy nie było to takie proste!
+        </p>
+        <a href="#singup" style="text-decoration: none;">
+            <div id="subscribe">Dowiedź się więcej</div>
+        </a>
     </div>
 </header>
 <main>
@@ -193,6 +213,7 @@
                 </div>
                 </button>
             </div>
+        </div>
         <div class="no-button">
             <div class="footer-socials-text">
                 <div class="socials-left-side">
@@ -238,8 +259,8 @@
             </p>
         </div>
     </div>
-    </div>
 </footer>
+
 <script src="styles/lib/jquery-2.1.4.min.js"></script>
 
 <script>
@@ -263,7 +284,72 @@
     });
 
 </script>
+<script>
 
+    var currentSlide = 1;
+
+    function showSlide(currentSlide) {
+        $(".slide").hide();
+        $("#slide_" + currentSlide).fadeIn();
+    }
+
+
+    $("#slider-button-bottom_1").click(function () {
+        showSlide(2);
+    });
+    $("#slider-button-bottom_2").click(function () {
+        showSlide(3);
+    });
+    $("#slider-button-bottom_3").click(function () {
+        showSlide(4)
+    });
+
+
+    $("#slider-button-left-pic").click(function () {
+        currentSlide--;
+
+        if (currentSlide === 0)
+            currentSlide = 5;
+
+        showSlide(currentSlide);
+    });
+
+
+    $("#slider-button-right-pic").click(function () {
+
+        currentSlide++;
+
+        if (currentSlide === 6)
+            currentSlide = 1;
+
+        showSlide(currentSlide);
+
+    });
+
+    function nextSlide(){
+        currentSlide++;
+
+        if (currentSlide === 6)
+            currentSlide = 1;
+
+        showSlide(currentSlide);
+
+    }
+    var intervalId = setInterval(nextSlide, 5000);
+
+//    var nextSlide = setInterval(function () {
+//        showSlide = showSlide % 3 +1;
+//    }, 1000);
+
+
+
+
+//    var intervalId = setInterval(nextSlide, 5000);
+//
+//    clearInterval(intervalId);
+
+
+</script>
 
 </body>
 </html>
