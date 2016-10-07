@@ -9,7 +9,7 @@
 }
 
 #game-start {
-  width: 00px ;
+  width: 500px ;
   height: 500px;
   background-color: #2e578b;
   display: inline-block;
@@ -48,4 +48,33 @@
 #game-arrow {
   height: 40px ;
   text-align: center;
+}
+
+
+.apples {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 200;
+  width: 30px;
+  height: 30px;
+  background: #ff0000;
+}
+body {
+background-color: grey;
+}
+#site {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.site {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }

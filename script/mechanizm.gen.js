@@ -51,7 +51,7 @@ function update() {
     updateApplesPositions();
     updatePlayerPosition();
 
-    checkIfPlayerCoughtApple();
+    // checkIfPlayerCoughtApple();
 
     requestAnimationFrame(update);
 }
@@ -59,7 +59,11 @@ function update() {
 
 // on keypress player.speed = -10 / 10
 
-requestAnimationFrame(update);
+function startGame() {
+    $('<div #site>');
+    $('<div>').addClass('gameZone').appendTo('#site');
+    requestAnimationFrame(update);
+    setInterval(fireApple, 1500);
+}
 
-setInterval(fireApple, 1500);
 
