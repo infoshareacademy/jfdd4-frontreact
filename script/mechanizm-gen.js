@@ -7,7 +7,7 @@ var config = {
     apples = [],
     player = {
         left: config.boardWidth / 2,
-        velocity: 1
+        velocity: 0
 
     };
 
@@ -47,8 +47,10 @@ function updateApplesPositions() {
 
 function generatePlayerHTML(){
     player.$html = $('<div>').addClass('player');
+    var top = player.$html.position().top;
     player.$html.css({
-        left: player.left + 'px'
+        left: player.left + 'px',
+        top: top + 200 + 'px'
     });
     player.$html.appendTo('#gameZone');
 }
