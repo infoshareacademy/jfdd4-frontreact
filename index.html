@@ -14,7 +14,7 @@
     <nav class="navigation-nav" id="navigation">
         <ul class="navigation-ul">
             <li class="navigation">
-                <a class="navigation" href="#intro">
+                <a class="navigation" href="#slider-buttons-top">
                     Start
                 </a>
             </li>
@@ -51,25 +51,32 @@
         <div id="slider-button-right">
             <img id="slider-button-right-pic" src="images/arrow-right.png"/>
         </div>
-        <div id="slider-buttons-bottom">
-            <img id="slider-button-bottom_1" src="images/circle-button.png"/>
-            <img id="slider-button-bottom_2" src="images/circle-button.png"/>
-            <img id="slider-button-bottom_3" src="images/circle-button.png"/>
+        <div id="slider-buttons-top">
+            <img id="slider-button-top_0" src="images/stop-button.png"/>
+            <img id="slider-button-top_1" src="images/circle-button.png"/>
+            <img id="slider-button-top_2" src="images/circle-button.png"/>
+            <img id="slider-button-top_3" src="images/circle-button.png"/>
+            <img id="slider-button-top_4" src="images/circle-button.png"/>
+            <img id="slider-button-top_5" src="images/circle-button.png"/>
+            <img id="slider-button-top_6" src="images/play-button.png"/>
         </div>
     </div>
 
     <div class="logo">
-        <img class="logo" src="images/background/logo31.png" alt="logo">
+        <img class="logo" src="images/background/logo31.png" alt="logo"/>
     </div>
     <div class="slogan" style="">
         <h1>
-            Wybierzesz najlepsze produkty ekologiczne
+            Wybierzesz najlepsze, ekologiczne produkty.
         </h1>
         <p>
-            Nie ruszając się z domu. Nigdy nie było to takie proste!
+            Nie ruszając się z domu.
+        </p>
+        <p>
+            To nigdy nie było to takie proste!
         </p>
         <a href="#singup" style="text-decoration: none;">
-            <div id="subscribe">Dowiedź się więcej</div>
+            <div id="subscribe">Dowiedz się więcej</div>
         </a>
     </div>
 </header>
@@ -112,10 +119,8 @@
     <section id="singup" class="section">
         <div class="signup">
             <form action="http://tools.is-academy.pl/mailer.php" method="post">
-                <p class="singup-title">
-                    Obiecujemy skontaktować się z tobą tylko RAZ!:
-                </p>
-                <p>Zostaw swoj email, a powiadomimy Cie o premierze naszej aplikacji</p>
+                <p class="singup-title">Zostaw swój email, a powiadomimy Cię o premierze naszej aplikacji</p>
+                <p>Obiecujemy skontaktować się z tobą tylko RAZ!:</p>
                 <input class="input-email" type="email" placeholder="Twój email...." name="email">
                 <input type="hidden" name="receiver" value="wildmanblues@op.pl">
                 <input class="button-for-form-subskribe" type="submit" value="Wyślij">
@@ -211,7 +216,6 @@
                         </div>
                     </a>
                 </div>
-                </button>
             </div>
         </div>
         <div class="no-button">
@@ -286,45 +290,22 @@
 </script>
 <script>
 
-    var currentSlide = 1;
+    var currentSlide = 1,
+            invtervalId ;
 
     function showSlide(currentSlide) {
         $(".slide").hide();
         $("#slide_" + currentSlide).fadeIn();
     }
 
-
-    $("#slider-button-bottom_1").click(function () {
-        showSlide(2);
-    });
-    $("#slider-button-bottom_2").click(function () {
-        showSlide(3);
-    });
-    $("#slider-button-bottom_3").click(function () {
-        showSlide(4)
-    });
-
-
-    $("#slider-button-left-pic").click(function () {
+    function prevSlide(){
         currentSlide--;
 
         if (currentSlide === 0)
             currentSlide = 5;
 
         showSlide(currentSlide);
-    });
-
-
-    $("#slider-button-right-pic").click(function () {
-
-        currentSlide++;
-
-        if (currentSlide === 6)
-            currentSlide = 1;
-
-        showSlide(currentSlide);
-
-    });
+    }
 
     function nextSlide(){
         currentSlide++;
@@ -335,18 +316,47 @@
         showSlide(currentSlide);
 
     }
-    var intervalId = setInterval(nextSlide, 5000);
+    function startSlider() {
+        intervalId = setInterval(nextSlide, 5000);
+    }
+    function stopSlider() {
+        clearInterval(intervalId);
+    }
 
-//    var nextSlide = setInterval(function () {
-//        showSlide = showSlide % 3 +1;
-//    }, 1000);
+    $("#slider-button-top_0").click(function () {
+        stopSlider();
+    });
+    $("#slider-button-top_1").click(function () {
+        showSlide(1);
+    });
+    $("#slider-button-top_2").click(function () {
+        showSlide(2);
+    });
+    $("#slider-button-top_3").click(function () {
+        showSlide(3);
+    });
+    $("#slider-button-top_4").click(function () {
+        showSlide(4);
+    });
+    $("#slider-button-top_5").click(function () {
+        showSlide(5);
+    });
+    $("#slider-button-top_6").click(function(){
+        startSlider();
+    });
 
 
+    $("#slider-button-left-pic").click(function () {
+        prevSlide();
+    });
 
 
-//    var intervalId = setInterval(nextSlide, 5000);
-//
-//    clearInterval(intervalId);
+    $("#slider-button-right-pic").click(function () {
+
+        nextSlide();
+    });
+
+    startSlider();
 
 
 </script>

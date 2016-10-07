@@ -117,10 +117,10 @@
     color: white;
     transform: rotate(360deg);
   }
-  .footer-youtube-icon:hover {
-    @include footer-social-icons-hover;
-    background-color: #CC181E;
-  }
+   .footer-youtube-icon:hover {
+     @include footer-social-icons-hover;
+     background-color: #CC181E;
+   }
   .footer-facebook-icon:hover {
     @include footer-social-icons-hover;
     background-color: #3B5998;

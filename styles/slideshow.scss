@@ -1,135 +1,132 @@
 .slideShow
 {
-  //max-width: 1900px;
   width: 100%;
-  //max-height: 1300px;
   height: 100%;
- position: absolute;
+  position: absolute;
   z-index: -1;
+  scroll-snap-coordinate: 11px;
+}
 
-}
-#slide_1
-{
-  float: left;
-  //max-width: 1900px;
-  width: 100%;
-  //max-height: 1200px;
-  height: 100%;
+@each $nazwa1 in slide_1,slide_2,slide_3,slide_4,slide_5 {
+  ##{$nazwa1} {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline;
+  }}
+
+@mixin standard-side-button {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: inline;
-}
-#slide_2
-{
-  float: left;
-  //max-width: 1900px;
-  width: 100%;
-  //max-height: 1200px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: inline;
-}
-#slide_3
-{
-  float: left;
-  //max-width: 1900px;
-  width: 100%;
-  //max-height: 1200px;
-  height: 100%;
-  //position: relative;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: inline;
-}
-#slide_4
-{
-  float: left;
-  //max-width: 1900px;
-  width: 100%;
-  //max-height: 1200px;
-  height: 100%;
-  //position: relative;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: inline;
-}
-#slide_5
-{
-  float: left;
-  //max-width: 1900px;
-  width: 100%;
-  //max-height: 1200px;
-  height: 100%;
-  //position: relative;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  top: 40%;
+  width: 90px;
+  height: 40%;
+  z-index: 2;
   display: inline;
 }
 
 #slider-button-left-pic
 {
   float: left;
-  position: absolute;
-  top: 40%;
   left: 20px;
-  width: 50px;
-  z-index: 2;
-  display: inline;
+  opacity: 0.2;
+  @include standard-side-button;
 }
 #slider-button-right-pic
 {
   float: right;
-  position: absolute;
-  top: 40%;
   right: 20px;
-  width: 50px;
-  z-index: 2;
-  display: inline;
+  opacity: 0.2;
+  @include standard-side-button;
+}
+#slider-button-left-pic:hover
+{
+  opacity: 0.9;
+}
+#slider-button-right-pic:hover
+{
+  opacity: 0.9;
 }
 
-#slider-buttons-bottom {
+#slider-buttons-top {
   float: left;
   position: absolute;
   top: 10%;
-  left: 45%;
+  left:38%;
   height: 50px;
   width: auto;
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(255, 255, 255, 0.15);
+}
 
+@each $nazwa2 in slider-button-top_0, slider-button-top_1, slider-button-top_2, slider-button-top_3, slider-button-top_4, slider-button-top_5, slider-button-top_6,{
+  ##{$nazwa2} {
+    float: left;
+    position: relative;
+    width: 50px;
+    z-index: 2;
+  }}
+
+@each $nazwa3 in slider-button-top_0, slider-button-top_1, slider-button-top_2, slider-button-top_3, slider-button-top_4, slider-button-top_5, slider-button-top_6,{
+  ##{$nazwa3}:active {
+    transform: scale(1.5);
+  }
+}
+
+.logo {
+  display: block;
+  position: inherit;
+  zoom: 70%;
+  float: left;
+  padding-top: 50px;
+}
+
+.slogan {
+  padding: 25% 10px 5%;
+  text-align: center;
+  font-style: italic;
+  position: relative;
 
 }
-#slider-button-bottom_1
-{
-  float: left;
-  position: relative;
-width: 50px;
-  z-index: 2;
+
+.slogan h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: ghostwhite;
+  text-shadow: 2px 2px 8px #FF0000;
 }
-#slider-button-bottom_2
-{
-  float: left;
-  position: relative;
-width: 50px;
-  z-index: 2;
+
+.slogan p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: ghostwhite;
+  font-weight: lighter;
+  line-height: 31px;
+  text-shadow: 2px 2px 8px #FF0000;
 }
-#slider-button-bottom_3
+
+#subscribe {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 60px;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  opacity: 0.5;
+  background-color: #fff76c;
+  font-size: 28px;
+  box-shadow: 0 0 222px white;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+#subscribe:hover
 {
-  float: left;
-  position: relative;
-  width: 50px;
-  z-index: 2;
+  opacity: 0.7;
+  text-decoration: none;
 }
