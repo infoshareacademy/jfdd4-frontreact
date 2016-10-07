@@ -5,13 +5,15 @@ $('form').on('submit', function(event) {
     event.preventDefault();
     // $('body').addClass('background-grey').show();
     $('#game-container').show();
-    $('#game-start').show();
+    $(window).scrollTop();
+    $('#game-start').appendTo('#game-container').show();
 });
 
 
 //gdy uzytkownik kliknie w spana (x) - zamykanie okienka
 $('.close').click(function () {
     $('#game-start').hide();
+    $('#game-container').hide();
 });
 
 ('#game-button').click (function () {
