@@ -1,17 +1,19 @@
 
+#game-container {
+  background-color: rgba(128, 128, 128, 0.82);
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 #game-start {
   width: 500px ;
   height: 500px;
   background-color: #2e578b;
-
-}
-
-
-#game {
-  width: 500px ;
-  height: 500px;
-  background-color: #257f8b;
-
+  position: absolute;
+  left: 25%;
+  text-align: center;
 }
 
 #game-button {
@@ -20,16 +22,30 @@
   cursor:pointer;
   color:#ffffff;
   font-weight: 600;
-  font-family: 'Lato', sans-serif; /*dodalam*/
+  font-family: 'Lato', sans-serif;
   font-size:20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 30px;
   text-decoration:none;
-  //text-align: center;
 }
 
-.background-grey {
-opacity: 0.9;
-  display:none;
+#game-title {
+  padding: 50px 20px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size:30px;
+}
+#game-title-2 {
+  padding: 30px 20px 20px;
+  font-size:20px;
+}
+
+#game-instruction {
+  padding: 20px 20px 2px;
+  font-size:15px;
+
+}
+
+#game-arrow {
+  height: 50px ;
+  text-align: center;
 }
