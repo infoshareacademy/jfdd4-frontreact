@@ -21,7 +21,7 @@ $('.close').click(function () {
 
 $('#game-button').click (function () {
     $('#game-start').hide();
-    $('body').hide();
+ 
     // $('<div>').addClass('gameZone').show();
     // $('<div>').addClass('gameZone').show();
     startGame();

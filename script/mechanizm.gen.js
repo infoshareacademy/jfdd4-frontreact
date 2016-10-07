@@ -2,7 +2,7 @@
  * Created by piotrszablewski on 06.10.16.
  */
 var config = {
-        boardWidth: $('#site').width()
+        boardWidth: 0,
     },
     apples = [],
     player = {
@@ -60,8 +60,8 @@ function update() {
 // on keypress player.speed = -10 / 10
 
 function startGame() {
-    $('<div #site>');
-    $('<div>').addClass('gameZone').appendTo('#site');
+    $('<div>').attr('id', 'gameZone').appendTo('#game-container');
+    config.boardWidth = $('#gameZone').width(); 
     requestAnimationFrame(update);
     setInterval(fireApple, 1500);
 }
