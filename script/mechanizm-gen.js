@@ -1,15 +1,16 @@
 /**
  * Created by piotrszablewski on 06.10.16.
  */
-var config = {
-        boardWidth: $('#site').width()
-    },
-    apples = [],
-    player = {
-        left: config.boardWidth / 2,
-        velocity: 0
+var config, apples, player;
+config = {
+    boardWidth: $('#site').width()
+};
+apples = [];
+player = {
+    left: config.boardWidth / 2,
+    velocity:0
 
-    };
+};
 
 function generateRandomBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -50,7 +51,7 @@ function generatePlayerHTML(){
     var top = player.$html.position().top;
     player.$html.css({
         left: player.left + 'px',
-        top: top + 200 + 'px'
+        top: top + 450 + 'px'
     });
     player.$html.appendTo('#gameZone');
 }
@@ -60,12 +61,26 @@ function updatePlayerPosition() {
     player.$html.css({
         left: left + player.velocity + 'px'
     });
-    // player.forEach(function () {
-        
-    //    
-    // })
-}
 
+}
+$(function(){
+
+    $(document).keydown(function(e){
+        // alert(e.keyCode);
+    switch (e.keyCode){
+        case 37: player.velocity =2;
+            break;
+        case 39: player.velocity = -2;
+            break;
+    }
+});
+
+});
+
+function movePlayer(){
+
+
+}
 function update() {
     updateApplesPositions();
     updatePlayerPosition();
