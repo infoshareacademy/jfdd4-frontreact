@@ -68,9 +68,9 @@ $(function(){
     $(document).keydown(function(e){
         // alert(e.keyCode);
     switch (e.keyCode){
-        case 37: player.velocity =2;
+        case 37: player.velocity =-2;
             break;
-        case 39: player.velocity = -2;
+        case 39: player.velocity = 2;
             break;
     }
 });
