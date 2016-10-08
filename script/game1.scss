@@ -52,8 +52,8 @@
 
 
 .apples {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: absolute;
   z-index: 200;
   width: 30px;
@@ -77,4 +77,12 @@ background-color: grey;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+}
+
+#gameZone {
+  width: 500px ;
+  height: 500px;
+  background-color: #2e578b;
+  display: inline-block;
+  margin: auto;
 }

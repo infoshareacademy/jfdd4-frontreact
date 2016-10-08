@@ -2,7 +2,9 @@
  * Created by piotrszablewski on 06.10.16.
  */
 var config = {
-        boardWidth: 0,
+
+        // boardWidth: 0,
+        boardWidth: 500,
     },
     apples = [],
     player = {
@@ -20,10 +22,12 @@ function generateApple() {
     }
 }
 
+
 function createAppleHTML(apple) {
+    var leftGameZone = $('#gameZone').position().left;
     console.log(apple.left + 'px');
     return $('<div>').addClass('apples').css({
-        left: apple.left + 'px'
+        left: apple.left + leftGameZone + 'px'
     });
 }
 
@@ -59,11 +63,24 @@ function update() {
 
 // on keypress player.speed = -10 / 10
 
+
+
+Apples.prototype.checkForBasketGrab = function(apple) {
+    // jeśli jablko jest w koszyku, zrób coś
+};
+
+
 function startGame() {
-    $('<div>').attr('id', 'gameZone').appendTo('#game-container');
-    config.boardWidth = $('#gameZone').width(); 
+
+    // a = c.b();
+
+    // $('div').attr('id', 'gameZone').appendTo('#game-container');
+    // $('#gameZone').appendTo('#game-container');
+    config.boardWidth = $("#gameZone").width();
+
     requestAnimationFrame(update);
     setInterval(fireApple, 1500);
 }
+
 
 

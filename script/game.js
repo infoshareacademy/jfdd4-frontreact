@@ -2,8 +2,9 @@
  * Created by Beata on 06.10.16.
  */
 
-
+$('#gameZone').hide();
 $('#game-start').hide();
+
 // wyswietlanie tablicy
 $('form').on('submit', function(event) {
     event.preventDefault();
@@ -21,6 +22,7 @@ $('.close').click(function () {
 
 $('#game-button').click (function () {
     $('#game-start').hide();
+    $('#gameZone').show();
  
     // $('<div>').addClass('gameZone').show();
     // $('<div>').addClass('gameZone').show();
