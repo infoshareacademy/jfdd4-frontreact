@@ -160,7 +160,7 @@ function timer()
         clearInterval(counter);
         return close_window();
     }
-    document.getElementById("timer").innerHTML= " Pozostalo Ci : " + count + " sekund na zlapanie jak najwiekszej ilosci jablek"; // watch for spelling
+    document.getElementById("timer").innerHTML= " Pozostalo Ci : " + count + " sekund na zlapanie jak najwiekszej ilosci jablek";
 }
 
 function points() {
