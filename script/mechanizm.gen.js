@@ -2,14 +2,13 @@
  * Created by piotrszablewski on 06.10.16.
  */
 var config = {
-
         boardWidth: 500,
     },
     apples = [],
     player = {
         left: config.boardWidth / 2,
         velocity:0,
-
+        score : 0
     };
 
 function generateRandomBetween(min, max) {
@@ -22,7 +21,6 @@ function generateApple() {
         speed: generateRandomBetween(1,5)
     }
 }
-
 
 function createAppleHTML(apple) {
     var leftGameZone = $('#gameZone').position().left;
@@ -45,7 +43,6 @@ function updateApplesPositions() {
         a.$html.css({
             'top': top + a.speed + 'px'
         })
-
     });
 }
 
@@ -56,9 +53,7 @@ function hideApplesOutside () {
             apple.$html.remove();
         }
     })
-};
-
-////////////////////////////////////////////////
+}
 
 function generatePlayerHTML(){
     player.$html = $('<div>').addClass('player');
@@ -76,8 +71,8 @@ function updatePlayerPosition(velocity) {
     player.$html.css({
         left: left + velocity + 'px'
     });
-
 }
+
 function initKeys(){
     $(document).keydown(function(e){
         // alert(e.keyCode);
@@ -107,16 +102,13 @@ function movePlayerOnBoard(velocity) {
     }
 };
 
+function countScore() {
+    player.score += 1;
+   $("#game-score").html("Punkty:" + player.score);
+    console.log('score');
 
-// function countScore() {
-//     var score;
-//     score += 100;
-//     text("Wynik: " + score.toString());
-//     console.log('score');
-//     //
-// };
-//
-// //
+};
+
  function checkCollisions() {
      apples.forEach(function (apple) {
          var appleX = apple.$html.position().left;
@@ -126,63 +118,16 @@ function movePlayerOnBoard(velocity) {
          var basketW = player.$html.width();
          var appleW = apple.$html.width();
          var basketH = player.$html.height();
-         var appleH = apple.$html.height();
-         console.log( 'basketLeft ' + basketX);
-         console.log( 'basketTop ' + basketY);
-         console.log( 'appleLeft ' + appleX);
-         console.log( 'appleTop ' + appleY);
-         console.log( 'basketHeight ' + basketH);
-         console.log( 'appleHeight ' + appleH);
+         var appleH = apple.$html.height() - 30 ;
 
-     if (basketX < appleX + appleW &&
-         basketX + basketW > appleX &&
-         basketY < appleY  + appleH &&
-         basketH + basketY > appleY) {
-         apple.$html.remove();
-         score += 100;
-         countScore();
-         //dodajemy punkty
-         //usuwamy jablka
-         //moze animacja przy usuwaniu
+         if (basketX < appleX + appleW &&
+             basketX + basketW > appleX &&
+             basketY < appleY  + appleH) {
+             apple.$html.remove();
+             countScore();
+         }
      })
-     }
- };
-
-// function hideApplesOutside () {
-//     apples.forEach(function (apple) {
-//         var bottomLineBoard = $('#gameZone').height() - 30;
-//         if ( bottomLineBoard < apple.$html.position().top){
-//             apple.$html.remove();
-//         }
-//     })
-// };
-
-
-
-
-////////////////////////
-function update() {
-    updateApplesPositions();
-    hideApplesOutside ();
-    updatePlayerPosition();
-    // countScore();
-    requestAnimationFrame(update);
-    // checkCollisions();
-}
-
-function startGame() {
-    // $('div').attr('id', 'gameZone').appendTo('#game-container');
-    // $('#gameZone').appendTo('#game-container');
-    config.boardWidth = $("#gameZone").width() - 30;
-    requestAnimationFrame(update);
-    setInterval(fireApple, 1500);
-    generatePlayerHTML();
-    initKeys();
-}
-
-
-
-
+ }
 
 var count=60;
 var counter=setInterval(timer, 1000);
@@ -194,11 +139,7 @@ function timer()
         clearInterval(counter);
         return close_window();
     }
-    document.getElementById("timer").innerHTML= " Pozostalo Ci : " + count + " sekund na zlapanie jak najwiekszej ilosci jablek"; // watch for spelling
-}
-
-function points() {
-
+    document.getElementById("timer").innerHTML= " Pozostało Ci : " + count + " sekund na złapanie jak najwiekszej ilości jabłek"; // watch for spelling
 }
 
 function close_window() {
@@ -206,4 +147,18 @@ function close_window() {
     location.reload();
 }
 
+function update() {
+    updateApplesPositions();
+    hideApplesOutside ();
+    updatePlayerPosition();
+    requestAnimationFrame(update);
+    checkCollisions();
+}
 
+function startGame() {
+    config.boardWidth = $("#gameZone").width() - 30;
+    requestAnimationFrame(update);
+    setInterval(fireApple, 1500);
+    generatePlayerHTML();
+    initKeys();
+}
