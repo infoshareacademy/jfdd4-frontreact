@@ -73,9 +73,10 @@ body {
 #gameZone {
   width: 500px;
   height: 500px;
-  background-color: #2e578b;
   display: inline-block;
-  margin: auto; }
+  margin: auto;
+  background-image: url("../images/game-background.png");
+  background-size: cover; }
 
 .player {
   top: 0;
