@@ -26,7 +26,7 @@ function generateApple() {
 
 function createAppleHTML(apple) {
     var leftGameZone = $('#gameZone').position().left;
-    console.log(apple.left + 'px');
+    // console.log(apple.left + 'px');
     return $('<div>').addClass('apples').css({
         left: apple.left + leftGameZone + 'px'
     });
@@ -117,23 +117,45 @@ function movePlayerOnBoard(velocity) {
 // };
 //
 // //
-//  function checkCollisions() {
-//      var apple;
-//      var basket;
-//      var x = position().left;
-//      var y =  position().top;
-//      if (basket.x < apple.x + apple.width &&
-//          basket.x + basket.width > apple.x &&
-//          basket.y < apple.y + apple.height &&
-//          basket.height + basket.y > apple.y) {
-//          apple.$html.remove();
-//          score += 100;
-//          countScore();
-//          //dodajemy punkty
-//          //usuwamy jablka
-//          //moze animacja przy zliczaniu
-//      }
-//  };
+ function checkCollisions() {
+     apples.forEach(function (apple) {
+         var appleX = apple.$html.position().left;
+         var appleY = apple.$html.position().top;
+         var basketX = player.$html.position().left;
+         var basketY = player.$html.position().top;
+         var basketW = player.$html.width();
+         var appleW = apple.$html.width();
+         var basketH = player.$html.height();
+         var appleH = apple.$html.height();
+         console.log( 'basketLeft ' + basketX);
+         console.log( 'basketTop ' + basketY);
+         console.log( 'appleLeft ' + appleX);
+         console.log( 'appleTop ' + appleY);
+         console.log( 'basketHeight ' + basketH);
+         console.log( 'appleHeight ' + appleH);
+
+     if (basketX < appleX + appleW &&
+         basketX + basketW > appleX &&
+         basketY < appleY  + appleH &&
+         basketH + basketY > appleY) {
+         apple.$html.remove();
+         score += 100;
+         countScore();
+         //dodajemy punkty
+         //usuwamy jablka
+         //moze animacja przy usuwaniu
+     })
+     }
+ };
+
+// function hideApplesOutside () {
+//     apples.forEach(function (apple) {
+//         var bottomLineBoard = $('#gameZone').height() - 30;
+//         if ( bottomLineBoard < apple.$html.position().top){
+//             apple.$html.remove();
+//         }
+//     })
+// };
 
 
 
@@ -145,6 +167,7 @@ function update() {
     updatePlayerPosition();
     // countScore();
     requestAnimationFrame(update);
+    // checkCollisions();
 }
 
 function startGame() {
@@ -157,7 +180,11 @@ function startGame() {
     initKeys();
 }
 
-var count=123;
+
+
+
+
+var count=60;
 var counter=setInterval(timer, 1000);
 function timer()
 {
