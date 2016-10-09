@@ -3,13 +3,12 @@
  */
 var config = {
 
-        // boardWidth: 0,
         boardWidth: 500,
     },
     apples = [],
     player = {
         left: config.boardWidth / 2,
-        // velocity:0
+        velocity:0
 
     };
 
@@ -61,49 +60,61 @@ function hideApplesOutside () {
 
 ////////////////////////////////////////////////
 
-// function generatePlayerHTML(){
-//     player.$html = $('<div>').addClass('player');
-//     var top = player.$html.position().top;
-//     player.$html.css({
-//         left: player.left + 'px',
-//         top: top + 450 + 'px'
-//     });
-//     player.$html.appendTo('#gameZone');
-// }
-//
-// function updatePlayerPosition() {
-//     var left = player.$html.position().left;
-//     player.$html.css({
-//         left: left + player.velocity + 'px'
-//     });
-//
-// }
-// $(function(){
-//
-//     $(document).keydown(function(e){
-//         // alert(e.keyCode);
-//         switch (e.keyCode){
-//             case 37: player.velocity =-2;
-//                 break;
-//             case 39: player.velocity = 2;
-//                 break;
-//         }
-//     });
-//
-// });
-//
+function generatePlayerHTML(){
+    player.$html = $('<div>').addClass('player');
+    var top = player.$html.position().top;
+    player.$html.css({
+        left: player.left + 'px',
+        top: top + 450 + 'px'
+    });
+    player.$html.appendTo('#gameZone');
+}
+
+function updatePlayerPosition(velocity) {
+    var left = player.$html.position().left;
+    player.$html.css({
+        left: left + velocity + 'px'
+    });
+
+}
+function initKeys(){
+    $(document).keydown(function(e){
+        // alert(e.keyCode);
+        switch (e.keyCode){
+            case 37: updatePlayerPosition(-5);
+                break;
+            case 39: updatePlayerPosition(5);
+                break;
+        }
+    });
+
+
+    player.forEach(function (leftSideBoard) {
+        var LeftLineBoard = $('#gameZone').left() - 30;
+        var RightLineBoard = $('#gameZone').right() - 30;
+        if ( LeftLineBoard < leftSideBoard.$html.position().left){
+            player.$html.remove();
+        }
+    })
+    // var board = $('#gameZone');
+    // if (position.left >= 0 && position.top >= 0 &&
+    //     position.left + board.width() <= barrier.width() &&
+    //     position.top + board.height() <= barrier.height()) {
+    //     player.stop();
+    // }
+
+};
+
 // function movePlayer(){
 //
 // }
-//
-//
-// function updatePlayerPosition() {
-//
-// }
 
+
+////////////////////////
 function update() {
     updateApplesPositions();
     hideApplesOutside ();
+    updatePlayerPosition();
     // updatePlayerPosition();
 
     // checkIfPlayerCoughtApple();
@@ -127,10 +138,13 @@ function startGame() {
 
     // $('div').attr('id', 'gameZone').appendTo('#game-container');
     // $('#gameZone').appendTo('#game-container');
-    config.boardWidth = $("#gameZone").width()-30;
+    config.boardWidth = $("#gameZone").width() - 30;
 
     requestAnimationFrame(update);
     setInterval(fireApple, 1500);
+    generatePlayerHTML();
+    initKeys();
+
 }
 
 

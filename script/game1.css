@@ -75,4 +75,13 @@ body {
   display: inline-block;
   margin: auto; }
 
+.player {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 200;
+  width: 60px;
+  height: 30px;
+  background: #fffa35; }
+
 /*# sourceMappingURL=game1.css.map */
