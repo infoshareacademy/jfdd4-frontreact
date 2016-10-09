@@ -92,14 +92,21 @@ function initKeys(){
 
 function movePlayerOnBoard(velocity) {
     var board = $('#gameZone');
-    var leftLineBoard = board.position().left;
-    if (leftLineBoard < player.$html.position().left && player.$html.position().left < leftLineBoard +  board.width() ) {
-        updatePlayerPosition(velocity);
-        console.log('leftLineBoard ' + board.position().left);
-        console.log('pozycja playera ' + player.$html.position().left);
-        console.log('rightLineBoard ' + leftLineBoard +  board.width());
+    var leftBoardLine = board.position().left;
+    var rightBoardLine = leftBoardLine +  board.width();
+    var newPositionPlayer = player.$html.position().left;
+
+    if (velocity < 0) {
+       if (leftBoardLine <= newPositionPlayer + velocity) {
+           updatePlayerPosition(velocity);
+       }
+    } else {
+        if (newPositionPlayer  + player.$html.width() <= rightBoardLine ) {
+            updatePlayerPosition(velocity);
+        }
     }
 };
+
 
 // function countScore() {
 //     var score;
