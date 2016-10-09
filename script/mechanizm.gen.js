@@ -157,5 +157,26 @@ function startGame() {
     initKeys();
 }
 
+var count=123;
+var counter=setInterval(timer, 1000);
+function timer()
+{
+    count=count-1;
+    if (count <= 0)
+    {
+        clearInterval(counter);
+        return close_window();
+    }
+    document.getElementById("timer").innerHTML= " Pozostalo Ci : " + count + " sekund na zlapanie jak najwiekszej ilosci jablek"; // watch for spelling
+}
+
+function points() {
+
+}
+
+function close_window() {
+    // window.alert (document.write("Zlapales: " + points + "jablek"));
+    location.reload();
+}
 
 
