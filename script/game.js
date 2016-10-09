@@ -8,9 +8,11 @@ $('#game-start').hide();
 // wyswietlanie tablicy
 $('form').on('submit', function(event) {
     event.preventDefault();
-    $('#game-container').show();
-    $(window).scrollTop();
-    $('#game-start').appendTo('#game-container').show();
+    if($('.input-email').val().length != 0 ) {
+        $('#game-container').show();
+        $(window).scrollTop();
+        $('#game-start').appendTo('#game-container').show();
+    }
 });
 
 
