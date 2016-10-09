@@ -104,7 +104,7 @@ function movePlayerOnBoard(velocity) {
 
 function countScore() {
     player.score += 1;
-   $("#game-score").html("Punkty:" + player.score);
+   $("#game-score").html("Punkty: " + player.score);
     console.log('score');
 
 };
@@ -130,22 +130,26 @@ function countScore() {
  }
 
 var count=60;
-var counter=setInterval(timer, 1000);
+var counter;
+
 function timer()
 {
     count=count-1;
     if (count <= 0)
     {
         clearInterval(counter);
-        return close_window();
+        $('#gameZone').hide();
+        $('#game-end').show().html("Zdobyte punkty: " + player.score);
+        $('#game-end').delay(3000).fadeOut('fast');
+        // return close_window();
     }
     document.getElementById("timer").innerHTML= " Pozostało Ci : " + count + " sekund na złapanie jak najwiekszej ilości jabłek"; // watch for spelling
 }
 
-function close_window() {
-    // window.alert (document.write("Zlapales: " + points + "jablek"));
-    location.reload();
-}
+// function close_window() {
+//     // window.alert (document.write("Zlapales: " + points + "jablek"));
+//     location.reload();
+// }
 
 function update() {
     updateApplesPositions();
@@ -161,4 +165,5 @@ function startGame() {
     setInterval(fireApple, 1500);
     generatePlayerHTML();
     initKeys();
+    counter=setInterval(timer, 1000);
 }

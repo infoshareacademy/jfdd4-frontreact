@@ -1,4 +1,3 @@
-
 #game-container {
   //background-color: rgba(128, 128, 128, 0.82);
   background-size: contain;
@@ -18,6 +17,18 @@
   background-size: cover;
   filter: grayscale(0.8);
   //opacity: 0.8;
+}
+
+#game-end {
+  width: 500px ;
+  height: 500px;
+  background-color: #2e578b;
+  display: inline-block;
+  margin: auto;
+  background-image: url('../images/game-background.png');
+  background-size: cover;
+  filter: grayscale(0.8);
+  font-size: 20px;
 }
 
 #game-button {
@@ -68,7 +79,7 @@
   background-size: contain;
 }
 body {
-//background-color: grey;
+  //background-color: grey;
 }
 #site {
   width: 500px;
@@ -108,3 +119,17 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#game-end-title {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#game-end-score {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
