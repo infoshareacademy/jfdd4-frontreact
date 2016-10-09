@@ -1,0 +1,82 @@
+.slideShow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; }
+
+#slide_1 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline; }
+
+#slide_2 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline; }
+
+#slide_3 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline; }
+
+#slider-button-left-pic {
+  float: left;
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  width: 50px;
+  z-index: 2;
+  display: inline; }
+
+#slider-button-right-pic {
+  float: right;
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  width: 50px;
+  z-index: 2;
+  display: inline; }
+
+#slider-buttons-bottom {
+  float: left;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  height: 50px;
+  width: auto;
+  z-index: 2; }
+
+#slider-button-bottom_1 {
+  float: left;
+  position: relative;
+  width: 50px;
+  z-index: 2; }
+
+#slider-button-bottom_2 {
+  float: left;
+  position: relative;
+  width: 50px;
+  z-index: 2; }
+
+#slider-button-bottom_3 {
+  float: left;
+  position: relative;
+  width: 50px;
+  z-index: 2; }
+
+/*# sourceMappingURL=slideshow.css.map */

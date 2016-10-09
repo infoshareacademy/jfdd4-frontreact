@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var person = {
+        firstName: 'pawel',
+        lastName: 'kaczmarek',
+        age: 18
+    };
+
+    var age = 18;
+
+    function modifyPerson(object) {
+        object.firstName = 'michal';
+        object.age += 10
+    }
+
+    modifyPerson(person);
+    modifyPerson(age);
+
+    document.write(person.age, person.firstName);
+
+
+
+setTimeout(function () {
+
+console.log('dupa');
+
+}(3000))
+
+</script>
+</body>
+</html>
