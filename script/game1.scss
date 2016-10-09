@@ -58,7 +58,10 @@
   z-index: 200;
   width: 30px;
   height: 30px;
-  background: #ff0000;
+  //background: #ff0000;
+  background-image: url("../images/apple.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 body {
 background-color: grey;
@@ -92,7 +95,10 @@ background-color: grey;
   left: 0;
   position: absolute;
   z-index: 200;
-  width: 60px;
-  height: 30px;
-  background: #fffa35;
+  width: 100px;
+  height: 60px;
+  //background: #fffa35;
+  background-image: url("../images/basket-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

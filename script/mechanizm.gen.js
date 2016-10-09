@@ -8,7 +8,7 @@ var config = {
     apples = [],
     player = {
         left: config.boardWidth / 2,
-        velocity:0
+        velocity:0,
 
     };
 
@@ -63,9 +63,10 @@ function hideApplesOutside () {
 function generatePlayerHTML(){
     player.$html = $('<div>').addClass('player');
     var top = player.$html.position().top;
+    var leftGameZone = $('#gameZone').position().left;
     player.$html.css({
-        left: player.left + 'px',
-        top: top + 450 + 'px'
+        left: player.left + leftGameZone + 'px',
+        top: top + 440 + 'px'
     });
     player.$html.appendTo('#gameZone');
 }
@@ -87,15 +88,54 @@ function initKeys(){
                 break;
         }
     });
+};
+
+// function movePlayerOnBoard() {
+//     var board = $('#gameZone');
+//     var LeftLineBoard = board.position().left;
+//     if (LeftLineBoard < player.$html.position().left && player.$html.position().left < LeftLineBoard +  board.width() ) {
+//         // updatePlayerPosition().stop();
+//     }
+// };
+
+// function countScore() {
+//     var score;
+//     score += 100;
+//     text("Wynik: " + score.toString());
+//     console.log('score');
+//     //
+// };
+//
+// //
+//  function checkCollisions() {
+//      var apple;
+//      var basket;
+//      var x = position().left;
+//      var y =  position().top;
+//      if (basket.x < apple.x + apple.width &&
+//          basket.x + basket.width > apple.x &&
+//          basket.y < apple.y + apple.height &&
+//          basket.height + basket.y > apple.y) {
+//          score += 100;
+//          //dodajemy punkty
+//          //usuwamy jablka
+//          //moze animacja przy zliczaniu
+//      }
+//  };
 
 
-    player.forEach(function (leftSideBoard) {
-        var LeftLineBoard = $('#gameZone').left() - 30;
-        var RightLineBoard = $('#gameZone').right() - 30;
-        if ( LeftLineBoard < leftSideBoard.$html.position().left){
-            player.$html.remove();
-        }
-    })
+
+        // var left = player.$html.position().left;
+        // var LeftLineBoard = $('#gameZone').left() ;
+        // var RightLineBoard = $('#gameZone').right() ;
+        // if ( LeftLineBoard < LeftLineBoard.$html.position().left){
+        //     player.$html.stop();
+
+    // apples.forEach(function (apple) {
+    //     var bottomLineBoard = $('#gameZone').height() - 30;
+    //     if ( bottomLineBoard < apple.$html.position().top){
+    //         apple.$html.remove();
+    //     }
     // var board = $('#gameZone');
     // if (position.left >= 0 && position.top >= 0 &&
     //     position.left + board.width() <= barrier.width() &&
@@ -103,11 +143,6 @@ function initKeys(){
     //     player.stop();
     // }
 
-};
-
-// function movePlayer(){
-//
-// }
 
 
 ////////////////////////
@@ -115,36 +150,19 @@ function update() {
     updateApplesPositions();
     hideApplesOutside ();
     updatePlayerPosition();
-    // updatePlayerPosition();
-
-    // checkIfPlayerCoughtApple();
-
+    // countScore();
     requestAnimationFrame(update);
 }
 
 
-// on keypress player.speed = -10 / 10
-
-
-
-// Apples.prototype.checkForBasketGrab = function(apple) {
-//     // jeśli jablko jest w koszyku, zrób coś
-// };
-
-
 function startGame() {
-
-    // a = c.b();
-
     // $('div').attr('id', 'gameZone').appendTo('#game-container');
     // $('#gameZone').appendTo('#game-container');
     config.boardWidth = $("#gameZone").width() - 30;
-
     requestAnimationFrame(update);
     setInterval(fireApple, 1500);
     generatePlayerHTML();
     initKeys();
-
 }
 
 

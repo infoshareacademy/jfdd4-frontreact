@@ -49,7 +49,9 @@
   z-index: 200;
   width: 30px;
   height: 30px;
-  background: #ff0000; }
+  background-image: url("../images/apple.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 body {
   background-color: grey; }
@@ -80,8 +82,10 @@ body {
   left: 0;
   position: absolute;
   z-index: 200;
-  width: 60px;
-  height: 30px;
-  background: #fffa35; }
+  width: 100px;
+  height: 60px;
+  background-image: url("../images/basket-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 /*# sourceMappingURL=game1.css.map */
