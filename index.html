@@ -14,7 +14,7 @@
     <nav class="navigation-nav" id="navigation">
         <ul class="navigation-ul">
             <li class="navigation">
-                <a class="navigation" href="#intro">
+                <a class="navigation" href="#slideShow">
                     Start
                 </a>
             </li>
@@ -37,21 +37,43 @@
         </ul>
     </nav>
 
-    <div id="intro">
-        <div class="logo">
-            <img class="logo" src="images/background/logo31.png" alt="logo">
+    <div id="slideShow">
+        <div class="slider">
+            <img class="slide" id="slide_1" src="images/background/8.jpg"/>
+            <img class="slide" id="slide_2" src="images/background/7.jpg"/>
+            <img class="slide" id="slide_3" src="images/background/6.jpg"/>
         </div>
-        <div class="slogan" style="">
-            <h1>
-                Wybierzesz najlepsze produkty ekologiczne
-            </h1>
-            <p>
-                Nie ruszając się z domu. Nigdy nie było to takie proste!
-            </p>
-            <a href="#singup" style="text-decoration: none;">
-                <div id="subscribe">Dowiedź się więcej</div>
-            </a>
+        <div id="slider-button-left">
+            <img id="slider-button-left-pic" src="images/left-arrow.svg"/>
         </div>
+        <div id="slider-button-right">
+            <img id="slider-button-right-pic" src="images/right-arrow.svg"/>
+        </div>
+        <!--<div id="slider-buttons-top">-->
+            <!--<img id="slider-button-top_0" src="images/stop-button.png"/>-->
+            <!--<img id="slider-button-top_1" src="images/circle-button.png"/>-->
+            <!--<img id="slider-button-top_2" src="images/circle-button.png"/>-->
+            <!--<img id="slider-button-top_3" src="images/circle-button.png"/>-->
+            <!--<img id="slider-button-top_6" src="images/play-button.png"/>-->
+        <!--</div>-->
+    </div>
+
+    <div class="logo">
+        <img class="logo" src="images/background/logo31.png" alt="logo"/>
+    </div>
+    <div class="slogan" style="">
+        <h1>
+            Wybierzesz najlepsze, ekologiczne produkty.
+        </h1>
+        <p>
+            Nie ruszając się z domu.
+        </p>
+        <p>
+            To nigdy nie było to takie proste!
+        </p>
+        <a href="#singup" style="text-decoration: none;">
+            <div id="subscribe">Dowiedz się więcej</div>
+        </a>
     </div>
 </header>
 <main>
@@ -190,53 +212,91 @@
     </section>
 </main>
 <footer>
-    <div id="footer-poznajmy-text">
+    <div class="footer-poznajmy-text">
         <h1>
             Poznajmy się
         </h1>
     </div>
-    <div id="footer-kontakt-text">
+    <div class="footer-kontakt-text">
         <h1>Kontakt</h1>
     </div>
     <div style="clear: both"></div>
-    <div id="footer-socials-text">
-        <a href="https://facebook.com" class="footer-social-icons" target="_blank">
-            <div id="footer-facebook-icon">
-                <i class="icon-facebook"></i>
+    <div class="footer-socials-text">
+        <div class="socials-left-side">
+            <div class="footer-dropdownmenu">
+                <button class="footer-dropdownmenu-button">
+                    <img src="images/iconmonstr-sort-10.png" style="width: 70px; height: 70px;">
+                </button>
+                <div class="footer-dropdownmenu-content">
+                    <a href="https://facebook.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-facebook-icon">
+                            <i class="icon-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="htps://googleplus.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-googleplus-icon">
+                            <i class="icon-googleplus"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-instagram-icon">
+                            <i class="icon-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://youtube.pl" class="footer-social-icons" target="_blank">
+                        <div class="footer-youtube-icon">
+                            <i class="icon-youtube"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="htps://googleplus.com" class="footer-social-icons" target="_blank">
-            <div id="footer-googleplus-icon">
-                <i class="icon-googleplus"></i>
+        </div>
+        <div class="no-button">
+            <div class="footer-socials-text">
+                <div class="socials-left-side">
+                    <a href="https://facebook.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-facebook-icon">
+                            <i class="icon-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="htps://googleplus.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-googleplus-icon">
+                            <i class="icon-googleplus"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com" class="footer-social-icons" target="_blank">
+                        <div class="footer-instagram-icon">
+                            <i class="icon-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://youtube.pl" class="footer-social-icons" target="_blank">
+                        <div class="footer-youtube-icon">
+                            <i class="icon-youtube"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="https://www.instagram.com" class="footer-social-icons" target="_blank">
-            <div id="footer-instagram-icon">
-                <i class="icon-instagram"></i>
-            </div>
-        </a>
-        <a href="https://youtube.pl" class="footer-social-icons" target="_blank">
-            <div id="footer-youtube-icon">
-                <i class="icon-youtube"></i>
-            </div>
-        </a>
-        <a href="mailto:frontreact@infoshareacadey.pl?Subject=Hello%20again" class="footer-social-icons" target="_blank" style="float: right">
-            <div id="footer-gmail-icon">
-                <i class="icon-gmail"></i>
-            </div>
-        </a>
+        </div>
+
+        <div class="socials-right-side">
+            <a href="mailto:frontreact@infoshareacadey.pl?Subject=Hello%20again" class="footer-social-icons" target="_blank" style="float: right">
+                <div class="footer-gmail-icon">
+                    <i class="icon-gmail"></i>
+                </div>
+            </a>
+        </div>
         <div style="clear: both"></div>
-    </div>
-    <div id="footer-credits" style="clear: both">
-        <p>
-            © Copyright 2016
-        </p>
-        <p>
-            Wszystkie prawa zastrzeżone. Wszystkie teksty, zdjęcia, grafika, ścieżki dźwiękowe, wideo i animacji danych jak również ich skład lub układ są chronione prawami autorskimi i innymi prawami ochronnymi. Ich zawartość nie mogą być kopiowane do celów komercyjnych lub innych, ani nie może on być wyświetlany, nawet w zmodyfikowanej wersji na innych stronach internetowych.
-        </p>
+
+        <div class="footer-credits" style="clear: both">
+            <p>
+                © Copyright 2016
+            </p>
+            <p>
+                Wszystkie prawa zastrzeżone. Wszystkie teksty, zdjęcia, grafika, ścieżki dźwiękowe, wideo i animacji danych jak również ich skład lub układ są chronione prawami autorskimi i innymi prawami ochronnymi. Ich zawartość nie mogą być kopiowane do celów komercyjnych lub innych, ani nie może on być wyświetlany, nawet w zmodyfikowanej wersji na innych stronach internetowych.
+            </p>
+        </div>
     </div>
 </footer>
-
 <script src="lib/jquery-2.1.4.min.js"></script>
 
 <script>
@@ -264,5 +324,6 @@
 <script src="script/team-rotation.js" ></script>
 <script src="script/game.js" ></script>
 <script src="script/mechanizm.gen.js"></script>
+<script src="script/slider.js"></script>
 </body>
 </html>
