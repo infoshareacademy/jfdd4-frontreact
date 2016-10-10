@@ -8,78 +8,9 @@ body
 
 
 
-/*PATRYK*/
-#intro
-{
-    background-image: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/background/8.jpg);
-    /*background-image: url(../images/background/10.jpg);*/
-    background-size: cover;
-    background-position: center;
-    transition: 2s ease;
-    position: relative;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-/*MALY LOGOTYP SERWISU*/
-
-.logo {
-    display: block;
-    position: inherit;
-    zoom: 70%;
-    float: left;
-    padding-top: 50px;
-}
-/*NAPIS PROMUJACY*/
-
-.slogan {
-    padding: 25% 10px 5%;
-    text-align: center;
-    font-style: italic; /*czy jest ok?*/
-    position: relative;
-}
-
-.slogan h1 {
-    color: antiquewhite;
-    font-weight:bold;
-    font-size: 48px;
-    /*font-family: "Courier 10 Pitch";*/
-}
-
-.slogan p {
-    margin-top: 20px;
-    font-size: 20px;
-    color: ghostwhite;
-    font-weight: lighter;
-    line-height: 31px;
-}
-
-#subscribe {
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 60px;
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    opacity: 0.5;
-    background-color: #fff76c;
-    font-size: 28px;
-    box-shadow: 0 0 222px white;
-    color: black;
-    /*font-family: 'Courgette', cursive;*/
-    font-family: 'Lato', sans-serif; /*dodalam*/
-    font-style: normal; /*dodalam*/
-}
-
-#subscribe:hover
-{
-    opacity: 0.7;
-    text-decoration: none;
-}
-
-
 
 @import "_footer.scss";
 @import "_features-team.scss";
 @import "_navigation.scss";
 @import "_game.scss";
+@import "slider.scss";
