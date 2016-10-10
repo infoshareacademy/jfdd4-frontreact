@@ -97,6 +97,7 @@
   a.footer-social-icons {
     color: black;
     text-decoration: none;
+    overflow: hidden;
   }
   @each $nazwa1 in footer-youtube-icon,
   footer-facebook-icon,
