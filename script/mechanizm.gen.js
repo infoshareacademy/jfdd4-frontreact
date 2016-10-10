@@ -129,7 +129,7 @@ function countScore() {
      })
  }
 
-var count=60;
+var count=15;
 var counter;
 
 function timer()
